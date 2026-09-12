@@ -2,7 +2,7 @@
 using System;
 
 [Flags]
-public enum Weekday
+public enum Weekdays
 {
 	MONDAY,
 	TUESDAY,

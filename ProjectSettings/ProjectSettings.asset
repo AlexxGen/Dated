@@ -608,7 +608,7 @@ PlayerSettings:
   gcWBarrierValidation: 0
   managedCodeVariant: {}
   apiCompatibilityLevelPerPlatform: {}
-  editorAssembliesCompatibilityLevel: 1
+  editorAssembliesCompatibilityLevel: 2
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: Dated

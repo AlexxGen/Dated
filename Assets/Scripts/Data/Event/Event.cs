@@ -30,5 +30,4 @@ public class CalendarEvent
 		this.EndTime = EndTime;
 		this.Dialogue = Dialogue;
 	}
-
 }
