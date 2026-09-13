@@ -6,8 +6,6 @@ using UnityEditor;
 
 public class DataParser
 {
-	public static readonly List<CalendarEvent> events = readEventsFromFile("Data/Events.csv");
-	
 	
 	public static TimeSpan timespanFromString(String originString)
 	{
