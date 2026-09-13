@@ -1,16 +1,46 @@
 
 using System;
-using System.Data;
+using UniCSV;
+using System.Collections.Generic;
 
 
 public class DataParser
 {
+	// public static readonly List<CalendarEvent> events = readEventsFromFile("Data/Events.csv");
 	
-	void thing()
-	{
+	// public static List<CalendarEvent> readEventsFromFile(String fileName)
+	// {
+	// 	List<CalendarEvent> toReturn = new List<CalendarEvent>();
 		
-		// GetDataTableFromCSVFile("table.csv");
-	}
+		
+	// 	List<List<String>> data = CsvParser.ParseFromPath(fileName, true);
+		
+	// 	foreach (List<String> line in data)
+	// 	{
+	// 		Character eventCharacter = CharacterFunctions.From(line[0]);
+	// 		String eventName = line[1];
+			
+	// 		/*
+	// 		- Category
+	// 		- Week number
+	// 		- Days
+	// 		- Start
+	// 		- End
+	// 		- Dialogue
+			
+			
+	// 		*/
+			
+			
+	// 		CalendarEvent toAdd = new CalendarEvent();
+			
+	// 		toReturn.Add(toAdd);
+	// 	}
+		
+		
+	// 	return toReturn;
+	// 	// GetDataTableFromCSVFile("table.csv");
+	// }
 	
 	/*
 	private static DataTable GetDataTableFromCSVFile(string csv_file_path)
