@@ -2,15 +2,17 @@
 using System;
 using System.Data;
 
+
 public class DataParser
 {
-	/*
+	
 	void thing()
 	{
-		GetDataTableFromCSVFile("table.csv");
+		
+		// GetDataTableFromCSVFile("table.csv");
 	}
 	
-	
+	/*
 	private static DataTable GetDataTableFromCSVFile(string csv_file_path)
 	{
 	    DataTable csvData = new DataTable();
