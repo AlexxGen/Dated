@@ -30,4 +30,9 @@ public class CalendarEvent
 		this.Length = Length;
 		this.Dialogue = Dialogue;
 	}
+	
+	public int LengthInMinutes()
+	{
+		return Length.Minutes + (60 * Length.Hours);
+	}
 }
