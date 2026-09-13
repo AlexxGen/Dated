@@ -2,44 +2,52 @@
 using System;
 using UniCSV;
 using System.Collections.Generic;
+using UnityEditor;
 
 public class DataParser
 {
-	// public static readonly List<CalendarEvent> events = readEventsFromFile("Data/Events.csv");
+	public static readonly List<CalendarEvent> events = readEventsFromFile("Data/Events.csv");
 	
-	// public static List<CalendarEvent> readEventsFromFile(String fileName)
-	// {
-	// 	List<CalendarEvent> toReturn = new List<CalendarEvent>();
+	
+	public static TimeSpan timespanFromString(String originString)
+	{
+		float totalTimeInHours = float.Parse(originString);
+		
+		int hoursToReturn = (int)totalTimeInHours;
+		float totalRemainingMinutes = (totalTimeInHours - hoursToReturn) * 60;
+		int minutesToReturn = (int)totalRemainingMinutes;
+		float totalRemainingSeconds = (totalRemainingMinutes - minutesToReturn) * 60;
+		int secondsToReturn = (int)totalRemainingSeconds;
 		
 		
-	// 	List<List<String>> data = CsvParser.ParseFromPath(fileName, true);
+		return new TimeSpan(hoursToReturn, minutesToReturn, secondsToReturn);
 		
-	// 	foreach (List<String> line in data)
-	// 	{
-	// 		Character eventCharacter = CharacterFunctions.From(line[0]);
-	// 		String eventName = line[1];
-			
-	// 		/*
-	// 		- Category
-	// 		- Week number
-	// 		- Days
-	// 		- Start
-	// 		- End
-	// 		- Dialogue
-			
-			
-	// 		*/
-			
-			
-	// 		CalendarEvent toAdd = new CalendarEvent();
-			
-	// 		toReturn.Add(toAdd);
-	// 	}
+	}
+	public static List<CalendarEvent> readEventsFromFile(String fileName)
+	{
+		List<CalendarEvent> toReturn = new List<CalendarEvent>();
 		
 		
-	// 	return toReturn;
-	// 	// GetDataTableFromCSVFile("table.csv");
-	// }
+		List<List<String>> data = CsvParser.ParseFromPath(fileName, true);
+		
+		foreach (List<String> line in data)
+		{
+			Character eventCharacter = CharacterFunctions.From(line[0]);
+			String eventName = line[1];
+			EventCategory eventCategory = EventCategoryFunctions.From(line[2]);
+			int eventWeek = int.Parse(line[3]);
+			Weekdays daysOfEvent = WeekdaysFunctions.From(line[4]);
+			TimeSpan eventLength = timespanFromString(line[5]);
+			String eventDialogue = line[6];
+			
+			CalendarEvent toAdd = new CalendarEvent(eventCharacter, eventName, eventCategory, eventWeek, daysOfEvent, eventLength, eventDialogue);
+			
+			toReturn.Add(toAdd);
+		}
+		
+		
+		return toReturn;
+	}
 	
 	/*
 	private static DataTable GetDataTableFromCSVFile(string csv_file_path)

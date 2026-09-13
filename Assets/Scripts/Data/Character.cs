@@ -20,6 +20,6 @@ public class CharacterFunctions
 				return Character.PETER;
 		}
 		
-		throw new ArgumentException("Error: Invalid character name \"" + originString + "\"");
+		throw new ArgumentException("Invalid character name \"" + originString + "\"");
 	}
 }
