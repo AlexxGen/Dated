@@ -64,7 +64,8 @@ Material:
     - _StencilWriteMask: 255
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
-    - _alpha: 0.2
+    - _alpha: 0.38
+    - _emission: 0
     - _intensity: 0.29
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
