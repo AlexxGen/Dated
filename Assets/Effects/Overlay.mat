@@ -65,11 +65,11 @@ Material:
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
     - _alpha: 0.38
-    - _emission: 0
-    - _intensity: 0.29
+    - _emission: 3
+    - _intensity: 0.4
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
-    - _color: {r: 0.29411766, g: 0.08235294, b: 0.6313726, a: 1}
+    - _color: {r: 0.6603774, g: 0.006272612, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
