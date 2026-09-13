@@ -7,8 +7,7 @@ public class CalendarEvent
 	public String Name {get; private set;}
 	public EventCategory Category {get; private set;}
 	public EventDate Date {get; private set;}
-	public TimeOfDay StartTime {get; private set;}
-	public TimeOfDay EndTime {get; private set;}
+	public TimeSpan Length {get; private set;}
 	public String Dialogue {get; private set;}
 	
 	
@@ -18,16 +17,14 @@ public class CalendarEvent
 		String Name,
 		EventCategory Category,
 		EventDate Date,
-		TimeOfDay StartTime,
-		TimeOfDay EndTime,
+		TimeSpan Length,
 		String Dialogue
 	) { 
 		this.OwningCharacter = OwningCharacter;
 		this.Name = Name;
 		this.Category = Category;
 		this.Date = Date;
-		this.StartTime = StartTime;
-		this.EndTime = EndTime;
+		this.Length = Length;
 		this.Dialogue = Dialogue;
 	}
 }
