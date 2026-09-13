@@ -1,10 +1,12 @@
 using System;
 
+
 public enum Character
 {
 	JESSIE,
 	PETER
 }
+
 
 public class CharacterFunctions
 {
@@ -19,6 +21,5 @@ public class CharacterFunctions
 		}
 		
 		throw new ArgumentException("Error: Invalid character name \"" + originString + "\"");
-		
 	}
 }

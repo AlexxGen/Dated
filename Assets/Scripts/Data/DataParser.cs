@@ -3,7 +3,6 @@ using System;
 using UniCSV;
 using System.Collections.Generic;
 
-
 public class DataParser
 {
 	// public static readonly List<CalendarEvent> events = readEventsFromFile("Data/Events.csv");
