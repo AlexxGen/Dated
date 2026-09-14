@@ -1,107 +1,213 @@
-,event name,category,week number,Days,Length,Dialogue
-Jessie,Introduction to Quantim Mechanics,Academic,0,"M, R",2,Sample Text
-Jessie,Introduction to Quantim Mechanics Lab,Academic,0,W,2,WHO ARE YOU
-Jessie,Numerical Computing,Academic,0,"M, R",2,
-Jessie,Numerical Computing Recitation,Academic,0,W,2,
-Jessie,Graph Theory,Academic,0,"T, F",2,
-Jessie,Graph Theory Recitation,Academic,0,W,2,
-Jessie,Foundations of Applied Math,Academic,0,"T, F",2,
-Jessie,Foundations of Applied Math Recitation,Academic,0,W,2,
-Jessie,Study Group - Quantum Mechanics,Academic,0,T,1.5,
-Jessie,Study Group - Quantum Mechanics,Academic,0,R,2,
-Jessie,Study Group - Quantum Mechanics,Academic,0,F,0.5,
-Jessie,Study Group - Numerical Computing,Academic,0,M,3,
-Jessie,Study Group - Numerical Computing,Academic,0,T,2,
-Jessie,Study Group - Numerical Computing,Academic,0,F,1.5,
-Jessie,Study Group - Graph Theory,Academic,0,M,1,
-Jessie,Study Group - Graph Theory,Academic,0,W,1,
-Jessie,Study Group - Graph Theory,Academic,0,R,1,
-Jessie,Study Group - Applied Math,Academic,0,M,1,
-Jessie,Study Group - Applied Math,Academic,0,R,1,
-Jessie,Study Group - Applied Math,Academic,0,F,1,
-Jessie,Walk With Boyfriend,Social,0,M,2,
-Jessie,Late Breakfast W Boyfriend,Social,0,T,1.5,
-Jessie,Lunch With Boyfriend,Social,0,W,0.5,
-Jessie,Normal Breakfast With Boyfriend,Social,0,R,3,
-Jessie,Date Night,Social,0,F,4,
-Jessie,Tea Time W Bestie,Social,0,M,1.5,
-Jessie,Game Night,Social,0,T,4,
-Jessie,Dinnner With Friends,Social,0,W,3,
-Jessie,Gossip Hour,Social,0,R,2,
-Jessie,Lunch With Friends,Social,0,F,1,
-Jessie,Physics Mentoring,Extracurricular,0,"T, R",3,
-Jessie,Community Service at Food Bank,Extracurricular,0,T,1.5,
-Jessie,News Paper Meetings,Extracurricular,0,"M, F",2,
-Jessie,News Paper Officer Meeting,Extracurricular,0,W,1,
-Jessie,Reporters Without Boarders,Extracurricular,0,"M, W, F",1,
-Peter,Professional Development: Leadership Competencies,Academic,0,"T, F",2,
-Peter,Mechanical Engineering Laboratory II,Academic,0,W,4,
-Peter,Multidisciplinary Capstone Design,Academic,0,"M, R",2,
-Peter,Aerodynamics,Academic,0,"T, F",2,
-Peter,Principles of Economics,Academic,0,"M, R",2,
-Peter,Soccer Practice,Extracurricular,0,M,3,
-Peter,Soccer Practice,Extracurricular,0,W,1.5,
-Peter,Soccer Practice,Extracurricular,0,F,4,
-Peter,Gym,Extracurricular,0,M,1.5,
-Peter,Gym,Extracurricular,0,T,3,
-Peter,Gym,Extracurricular,0,W,4,
-Peter,Gym,Extracurricular,0,R,3.5,
-Peter,Gym,Extracurricular,0,F,2,
-Peter,Walk With Jessie,Social,0,M,2,
-Peter,Late Breakfast W Jessie,Social,0,T,1.5,
-Peter,Lunch With Jessie,Social,0,W,0.5,
-Peter,Normal Breakfast With Jessie,Social,0,R,3,
-Peter,Date Night,Social,0,F,4,
-Jessie,Introduction to Quantim Mechanics,Academic,1,"M, R",2,
-Jessie,Introduction to Quantim Mechanics Lab,Academic,1,W,2,
-Jessie,Numerical Computing,Academic,1,"M, R",2,
-Jessie,Numerical Computing Recitation,Academic,1,W,2,
-Jessie,Graph Theory,Academic,1,"T, F",2,
-Jessie,Graph Theory Recitation,Academic,1,W,2,
-Jessie,Foundations of Applied Math,Academic,1,"T, F",2,
-Jessie,Foundations of Applied Math Recitation,Academic,1,W,2,
-Jessie,Study Group - Quantum Mechanics,Academic,1,T,1,
-Jessie,Study Group - Quantum Mechanics,Academic,1,R,1,
-Jessie,Study Group - Quantum Mechanics,Academic,1,F,1,
-Jessie,Study Group - Numerical Computing,Academic,1,M,1,
-Jessie,Study Group - Numerical Computing,Academic,1,T,1,
-Jessie,Study Group - Numerical Computing,Academic,1,F,1,
-Jessie,Study Group - Graph Theory,Academic,1,M,1,
+,event name,category,week number,Days,Length,post it note
+Jessie,Introduction to Quantum Mechanics,Academic,0,"M, R",2,first quant class 0_0
+Jessie,Introduction to Quantum Mechanics Lab,Academic,0,W,2,don't forget!
+Jessie,Numerical Computing,Academic,0,"M, R",2,num comp w/imani!!
+Jessie,Numerical Computing Recitation,Academic,0,W,2,should be chill
+Jessie,Graph Theory,Academic,0,"T, F",2,ugh this prof is gonna be hard
+Jessie,Graph Theory Recitation,Academic,0,W,2,yay graph theory!
+Jessie,Foundations of Applied Math,Academic,0,"T, F",2,this is gonna be a fun one
+Jessie,Foundations of Applied Math Recitation,Academic,0,W,2,can ppl stop scaring me abt this class?
+Jessie,Study Group - Quantum Mechanics,Academic,0,T,1.5,goated study group
+Jessie,Study Group - Quantum Mechanics,Academic,0,R,2,so busy already ughhh
+Jessie,Study Group - Quantum Mechanics,Academic,0,F,0.5,and more studying! and more studying!
+Jessie,Study Group - Numerical Computing,Academic,0,M,3,no way do i have time for this
+Jessie,Study Group - Numerical Computing,Academic,0,T,2,locking in for num comp!
+Jessie,Study Group - Numerical Computing,Academic,0,F,1.5,studying with imani and her friends
+Jessie,Study Group - Graph Theory,Academic,0,M,1,quizzes coming up already!
+Jessie,Study Group - Graph Theory,Academic,0,W,0.5,hopefully squeezing in some work
+Jessie,Study Group - Graph Theory,Academic,0,R,1.5,surely this class won't be too hard right :p
+Jessie,Study Group - Applied Math,Academic,0,M,2,remember to start making flash cards
+Jessie,Study Group - Applied Math,Academic,0,R,3,why do i do this to myself lolll
+Jessie,Study Group - Applied Math,Academic,0,F,0.5,do what you can with the time!
+Jessie,Walk With Boyfriend,Social,0,M,2,peter time yayyyy
+Jessie,Late Breakfast W Boyfriend,Social,0,T,1.5,remember to feed yourself!!
+Jessie,Lunch With Boyfriend,Social,0,W,0.5,ask him how the planner is going
+Jessie,Normal Breakfast With Boyfriend,Social,0,R,3,do either of us have time for this lol
+Jessie,Date Night,Social,0,F,4,maybe he'll agree to a horror movie >:)
+Jessie,Tea Time W Bestie,Social,0,M,1.5,can't lose this tradition this year :)
+Jessie,Game Night,Social,0,T,4,DON'T LET PETER WIN!!!
+Jessie,Dinnner With Friends,Social,0,W,3,really want 2 try that new mexican place
+Jessie,Gossip Hour,Social,0,R,2,keeping my priorities straight!
+Jessie,Lunch With Friends,Social,0,F,1,JESSIE! don't skip lunch!
+Jessie,Physics Mentoring,Extracurricular,0,"T, R",3,if no one shows up i'm gonna freak out
+Jessie,Community Service at Food Bank,Extracurricular,0,T,1.5,i hope i have time this semester :(
+Jessie,Newspaper Meetings,Extracurricular,0,"M, F",2,first chronicle meeting yayayaya
+Jessie,Newspaper Editor Meeting,Extracurricular,0,W,1,so excited to be an editor!
+Jessie,Reporters Without Borders,Extracurricular,0,"M, W, F",1,really good opportunity... don't mess it up!
+Peter,Professional Development: Leadership Competencies,Academic,0,"T, F",2,Can't believe I have to take another PD class
+Peter,Mechanical Engineering Laboratory II,Academic,0,W,4,Should be fun!
+Peter,Multidisciplinary Capstone Design,Academic,0,"M, R",2,Stressed for this one...
+Peter,Aerodynamics,Academic,0,"T, F",2,My favorite :)
+Peter,Principles of Economics,Academic,0,"M, R",2,Ugh humanities requirement 
+Peter,Soccer Practice,Extracurricular,0,M,3,First practice LFG
+Peter,Soccer Practice,Extracurricular,0,W,1.5,Can't slip on week 1
+Peter,Soccer Practice,Extracurricular,0,F,4,4 hours? Come on Coach
+Peter,Gym,Extracurricular,0,M,1.5,Gotta catch up after slacking all summer
+Peter,Gym,Extracurricular,0,T,3,Shoulders/abs
+Peter,Gym,Extracurricular,0,W,4,Chest/triceps/cardio
+Peter,Gym,Extracurricular,0,R,3.5,Back/biceps/cardio
+Peter,Gym,Extracurricular,0,F,2,Leg day :(
+Peter,Walk With Jessie,Social,0,M,2,Jessie Jessie Jessie Jessie Jessie
+Peter,Late Breakfast W Jessie,Social,0,T,1.5,Make time for your girl
+Peter,Lunch With Jessie,Social,0,W,0.5,She never remembers to get lunch
+Peter,Normal Breakfast With Jessie,Social,0,R,3,Don't let her get out of this
+Peter,Date Night,Social,0,F,4,Get her to watch a comedy for once?
+Jessie,Introduction to Quantum Mechanics,Academic,1,"M, R",2,quant week 2!!!!!
+Jessie,Introduction to Quantum Mechanics Lab,Academic,1,W,2,this TA drives me insaneee
+Jessie,Numerical Computing,Academic,1,"M, R",2,show up! you have friends in this class!
+Jessie,Numerical Computing Recitation,Academic,1,W,2,i <3 num comp
+Jessie,Graph Theory,Academic,1,"T, F",2,there might be a pop quiz :(
+Jessie,Graph Theory Recitation,Academic,1,W,2,one million recitations
+Jessie,Foundations of Applied Math,Academic,1,"T, F",2,you need to show up to get an A!!
+Jessie,Foundations of Applied Math Recitation,Academic,1,W,2,one gazillion recitations
+Jessie,Study Group - Quantum Mechanics,Academic,1,T,0.5,study squad 4 LIFE
+Jessie,Study Group - Quantum Mechanics,Academic,1,R,3,study or die!
+Jessie,Study Group - Quantum Mechanics,Academic,1,F,2,you got this :)
+Jessie,Study Group - Numerical Computing,Academic,1,M,1,get imani's notes :0
+Jessie,Study Group - Numerical Computing,Academic,1,T,3,ugh i need days to be 36 hours long
+Jessie,Study Group - Numerical Computing,Academic,1,F,0.5,
+Jessie,Study Group - Graph Theory,Academic,1,M,2.5,
 Jessie,Study Group - Graph Theory,Academic,1,W,1,
-Jessie,Study Group - Graph Theory,Academic,1,R,1,
-Jessie,Study Group - Applied Math,Academic,1,M,1,
-Jessie,Study Group - Applied Math,Academic,1,R,1,
-Jessie,Study Group - Applied Math,Academic,1,F,1,
-Jessie,Walk With Boyfriend,Social,1,M,1,
-Jessie,Late Breakfast W Boyfriend,Social,1,T,1,
-Jessie,Lunch With Boyfriend,Social,1,W,1,
-Jessie,Normal Breakfast With Boyfriend,Social,1,R,1,
-Jessie,Date Night,Social,1,F,1,
-Jessie,Tea Time W Bestie,Social,1,M,1,
-Jessie,Game Night,Social,1,T,1,
-Jessie,Dinnner With Friends,Social,1,W,1,
-Jessie,Gossip Hour,Social,1,R,1,
-Jessie,Lunch With Friends,Social,1,F,1,
-Jessie,Physics Mentoring,Extracurricular,1,"T, R",3,
-Jessie,News Paper Meetings,Extracurricular,1,"M, F",2,
-Jessie,News Paper Officer Meeting,Extracurricular,1,W,1,
-Jessie,Community Service at Food Bank,Extracurricular,1,T,1.5,
-Jessie,Reporters Without Boarders,Extracurricular,1,"M, W, F",1,
+Jessie,Study Group - Graph Theory,Academic,1,R,2,
+Jessie,Study Group - Applied Math,Academic,1,M,3,never enough time 2 put into this class
+Jessie,Study Group - Applied Math,Academic,1,R,2,
+Jessie,Study Group - Applied Math,Academic,1,F,1,finish ur work before date night
+Jessie,Snuggle with Boyfriend,Social,1,M,2.5,
+Jessie,Breakfast with Boyfriend,Social,1,T,2,
+Jessie,Watch a Movie with Boyfriend,Social,1,W,3.5,
+Jessie,Yapping with Boyfriend,Social,1,R,2,yk it's bad when u have to schedule this
+Jessie,Date Night,Social,1,F,4,anything but a comedy movie...
+Jessie,Play Card Games with Bestie,Social,1,M,1.5,
+Jessie,Game Night,Social,1,T,3,
+Jessie,Night Out With Friends,Social,1,W,4,
+Jessie,Gossip Hour,Social,1,R,2,
+Jessie,Lunch With Friends,Social,1,F,1.5,
+Jessie,Physics Mentoring,Extracurricular,1,"T, R",3,maybe mentees will actually come this week?
+Jessie,Newspaper Meetings,Extracurricular,1,"M, F",2,
+Jessie,Newspaper Editor Meeting,Extracurricular,1,W,1,
+Jessie,Community Service at Animal Hospital,Extracurricular,1,T,2,
+Jessie,Reporters Without Borders,Extracurricular,1,"M, W, F",2,
 Peter,Professional Development: Leadership Competencies,Academic,1,"T, F",2,
 Peter,Mechanical Engineering Laboratory II,Academic,1,W,4,
 Peter,Multidisciplinary Capstone Design,Academic,1,"M, R",2,
-Peter,Aerodynamics,Academic,1,"T, F",2,
+Peter,Aerodynamics,Academic,1,"T, F",2,Don't forget ur notebook again
 Peter,Principles of Economics,Academic,1,"M, R",2,
 Peter,Soccer Practice,Extracurricular,1,M,3,
 Peter,Soccer Practice,Extracurricular,1,W,5,
 Peter,Soccer Practice,Extracurricular,1,F,5.5,
-Peter,Gym,Extracurricular,1,M,2.5,
-Peter,Gym,Extracurricular,1,T,4,
-Peter,Gym,Extracurricular,1,W,0.5,
-Peter,Gym,Extracurricular,1,R,1,
-Peter,Gym,Extracurricular,1,F,3,
-Peter,Walk With Jessie,Social,1,M,2,
-Peter,Late Breakfast W Jessie,Social,1,T,1.5,
-Peter,Lunch With Jessie,Social,1,W,0.5,
-Peter,Normal Breakfast With Jessie,Social,1,R,3,
+Peter,Gym,Extracurricular,1,M,3,
+Peter,Gym,Extracurricular,1,T,2.5,
+Peter,Gym,Extracurricular,1,W,1.5,
+Peter,Gym,Extracurricular,1,R,3,
+Peter,Gym,Extracurricular,1,F,2,Legs.... :(
+Peter,Snuggle with Jessie,Social,1,M,2.5,
+Peter,Breakfast with Jessie,Social,1,T,2,
+Peter,Watch a Movie with Jessie,Social,1,W,3.5,
+Peter,Yapping with Jessie,Social,1,R,2,
 Peter,Date Night,Social,1,F,4,
+Jessie,Introduction to Quantum Mechanics,Academic,2,"M, R",2,
+Jessie,Introduction to Quantum Mechanics Lab,Academic,2,W,2,
+Jessie,Numerical Computing,Academic,2,"M, R",2,send ur notes to imani!
+Jessie,Numerical Computing Recitation,Academic,2,W,2,
+Jessie,Graph Theory,Academic,2,"T, F",2,this prof makes me hate math >:/
+Jessie,Graph Theory Recitation,Academic,2,W,2,
+Jessie,Foundations of Applied Math,Academic,2,"T, F",2,
+Jessie,Foundations of Applied Math Recitation,Academic,2,W,2,
+Jessie,Study Group - Quantum Mechanics,Academic,2,T,2,show up for the study squad :)
+Jessie,Study Group - Quantum Mechanics,Academic,2,R,1.5,
+Jessie,Study Group - Quantum Mechanics,Academic,2,F,2,
+Jessie,Study Group - Numerical Computing,Academic,2,M,3,
+Jessie,Study Group - Numerical Computing,Academic,2,T,2,
+Jessie,Study Group - Numerical Computing,Academic,2,F,3,
+Jessie,Study Group - Graph Theory,Academic,2,M,1,
+Jessie,Study Group - Graph Theory,Academic,2,W,1.5,
+Jessie,Study Group - Graph Theory,Academic,2,R,2,
+Jessie,Study Group - Applied Math,Academic,2,M,4,
+Jessie,Study Group - Applied Math,Academic,2,R,2,
+Jessie,Study Group - Applied Math,Academic,2,F,3,
+Jessie,Listen to Music with Boyfriend,Social,2,M,3,
+Jessie,Play a Board Game with Boyfriend,Social,2,T,3.5,
+Jessie,Dinner with Boyfriend,Social,2,W,2.5,
+Jessie,Play Video Games with Boyfriend,Social,2,R,4,
+Jessie,Watch Soccer Game with Boyfriend,Social,2,F,2,
+Jessie,Bowling with Friends,Social,2,M,4,
+Jessie,Mani Pedi with the Girls,Social,2,T,2.5,
+Jessie,Baking with Bestie,Social,2,W,2,
+Jessie,Movie Premiere with the Gang,Social,2,R,3,
+Jessie,Ice Cream and Dessert with Friends,Social,2,F,1.5,
+Jessie,Newspaper Meetings,Extracurricular,2,"M, F",2,
+Jessie,Newspaper Editor Meeting,Extracurricular,2,W,1,
+Jessie,Physics Mentoring,Extracurricular,2,"T, R",2.5,be there for ur one mentee who cares lol
+Jessie,Community Service at Homeless Shelter,Extracurricular,2,T,2,
+Jessie,Reporters Without Borders,Extracurricular,2,"M, W, F",2,
+Peter,Professional Development: Leadership Competencies,Academic,2,"T, F",2,
+Peter,Mechanical Engineering Laboratory II,Academic,2,W,4,
+Peter,Multidisciplinary Capstone Design,Academic,2,"M, R",2,
+Peter,Aerodynamics,Academic,2,"T, F",2,
+Peter,Principles of Economics,Academic,2,"M, R",2,
+Peter,Soccer Practice,Extracurricular,2,M,3,
+Peter,Soccer Practice,Extracurricular,2,W,5,
+Peter,Soccer Practice,Extracurricular,2,F,5.5,
+Peter,Gym,Extracurricular,2,M,3,
+Peter,Gym,Extracurricular,2,T,2.5,
+Peter,Gym,Extracurricular,2,W,1.5,
+Peter,Gym,Extracurricular,2,R,3,
+Peter,Gym,Extracurricular,2,F,2,
+Peter,Listen to Music with Jessie,Social,2,M,3,
+Peter,Play a Board Game with Jessie,Social,2,T,3.5,
+Peter,Dinner with Jessie,Social,2,W,2.5,
+Peter,Play Video Games with Jessie,Social,2,R,4,
+Peter,Watch Soccer Game with Jessie,Social,2,F,2,
+Jessie,Introduction to Quantum Mechanics,Academic,3,"M, R",2,
+Jessie,Introduction to Quantum Mechanics Lab,Academic,3,W,2,
+Jessie,Numerical Computing,Academic,3,"M, R",2,
+Jessie,Numerical Computing Recitation,Academic,3,W,2,
+Jessie,Graph Theory,Academic,3,"T, F",2,
+Jessie,Graph Theory Recitation,Academic,3,W,2,
+Jessie,Foundations of Applied Math,Academic,3,"T, F",2,
+Jessie,Foundations of Applied Math Recitation,Academic,3,W,2,
+Jessie,Study Group - Quantum Mechanics,Academic,3,T,2,
+Jessie,Study Group - Quantum Mechanics,Academic,3,R,1,
+Jessie,Study Group - Quantum Mechanics,Academic,3,F,3.5,
+Jessie,Study Group - Numerical Computing,Academic,3,M,2.5,
+Jessie,Study Group - Numerical Computing,Academic,3,T,1,
+Jessie,Study Group - Numerical Computing,Academic,3,F,3,
+Jessie,Study Group - Graph Theory,Academic,3,M,2,
+Jessie,Study Group - Graph Theory,Academic,3,W,3.5,
+Jessie,Study Group - Graph Theory,Academic,3,R,5,
+Jessie,Study Group - Applied Math,Academic,3,M,4,
+Jessie,Study Group - Applied Math,Academic,3,R,2.5,
+Jessie,Study Group - Applied Math,Academic,3,F,3,
+Jessie,Parallel Time with Boyfriend,Social,3,M,3,
+Jessie,Binge Watch a TV Show with Boyfriend,Social,3,T,4,
+Jessie,Craft time with Boyfriend,Social,3,W,3.5,
+Jessie,Drive around town with Boyfriend,Social,3,R,4.5,
+Jessie,Special Night Out with Boyfriend,Social,3,F,5,
+Jessie,Dinner & Movie with Friends,Social,3,M,4.5,
+Jessie,Board Games with Friends,Social,3,T,3,
+Jessie,School Concert with Friends,Social,3,W,2.5,
+Jessie,Tea and Dessert with Friends,Social,3,R,2,
+Jessie,Dancing with Friends,Social,3,F,1.5,
+Jessie,Newspaper Meetings,Extracurricular,3,"M, F",2,
+Jessie,Newspaper Editor Meeting,Extracurricular,3,W,1,
+Jessie,Physics Mentoring,Extracurricular,3,"T, R",3,
+Jessie,Community Service at Community Center,Extracurricular,3,T,3,
+Jessie,Reporters Without Borders,Extracurricular,3,"M, W, F",2,
+Peter,Professional Development: Leadership Competencies,Academic,3,"T, F",2,
+Peter,Mechanical Engineering Laboratory II,Academic,3,W,4,
+Peter,Multidisciplinary Capstone Design,Academic,3,"M, R",2,
+Peter,Aerodynamics,Academic,3,"T, F",2,
+Peter,Principles of Economics,Academic,3,"M, R",2,
+Peter,Soccer Practice,Extracurricular,3,M,3,
+Peter,Soccer Practice,Extracurricular,3,W,5,
+Peter,Soccer Practice,Extracurricular,3,F,5.5,
+Peter,Gym,Extracurricular,3,M,3,
+Peter,Gym,Extracurricular,3,T,2.5,
+Peter,Gym,Extracurricular,3,W,1.5,
+Peter,Gym,Extracurricular,3,R,3,
+Peter,Gym,Extracurricular,3,F,2,
+Peter,Parallel Time with Jessie,Social,3,M,3,
+Peter,Binge Watch a TV Show with Jessie,Social,3,T,4,
+Peter,Craft time with Jessie,Social,3,W,3.5,
+Peter,Drive around town with Jessie,Social,3,R,4.5,
+Peter,Special Night Out with Jessie,Social,3,F,5,
