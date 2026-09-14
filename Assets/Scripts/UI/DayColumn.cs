@@ -206,4 +206,19 @@ public class DayColumn : MonoBehaviour
     
     }
 
+    public void ClearColumn()
+    {
+        for (int i = transform.childCount - 1; i >= 0; i--)
+        {
+            Transform child = transform.GetChild(i);
+
+            if (child.gameObject.activeSelf)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+
+        RefreshLayout();
+    }
+
 }

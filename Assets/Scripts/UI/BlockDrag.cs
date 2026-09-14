@@ -1,10 +1,14 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
+    public static event Action<DayColumn, BlockData> onBlockDropped;
+
     [SerializeField] private GameObject placeholderPrefab;
     [SerializeField] private float returnTweenTime = 0.25f;
     [SerializeField] private LeanTweenType returnEaseType = LeanTweenType.easeOutCubic;
@@ -19,6 +23,8 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
 
     private DayColumn lastHoveredColumn;
 
+    private int returnTweenId = -1;
+
     private void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
@@ -28,7 +34,15 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
     
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (returnTweenId != -1)
+        {
+            LeanTween.cancel(gameObject);
+            returnTweenId = -1;
+        }
+
         LeanTween.cancel(gameObject);
+
+        CleanupPlaceholder();
 
         previousParent = transform.parent;
         previousSiblingIndex = transform.GetSiblingIndex();
@@ -36,6 +50,7 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
         if (placeholderPrefab != null )
         {
             currentPlaceholder = Instantiate(placeholderPrefab, previousParent);
+            currentPlaceholder.transform.position = gameObject.transform.position;
             currentPlaceholder.transform.SetSiblingIndex(transform.GetSiblingIndex());
 
             RectTransform placeholderRect = currentPlaceholder.GetComponent<RectTransform>();
@@ -188,20 +203,29 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
             if (targetColumn != null)
             {
                 targetColumn.AnimateLayout(gameObject.transform);
+                onBlockDropped?.Invoke(targetColumn, gameObject.GetComponent<BlockData>());
             }
 
             Vector3 targetWorldPos = currentPlaceholder.transform.position;
+            GameObject placeholderToDestroy = currentPlaceholder;
 
-            LeanTween.move(gameObject, targetWorldPos, returnTweenTime)
+            returnTweenId = LeanTween.move(gameObject, targetWorldPos, returnTweenTime)
                 .setEase(returnEaseType)
                 .setOnComplete(() =>
                 {
-                    if (currentPlaceholder != null)
-                    {
-                        transform.SetParent(currentPlaceholder.transform.parent, false);
-                        transform.SetSiblingIndex(currentPlaceholder.transform.GetSiblingIndex());
+                    returnTweenId = -1;
 
-                        Destroy(currentPlaceholder);
+                    if (placeholderToDestroy != null)
+                    {
+                        transform.SetParent(placeholderToDestroy.transform.parent, false);
+                        transform.SetSiblingIndex(placeholderToDestroy.transform.GetSiblingIndex());
+
+                        Destroy(placeholderToDestroy);
+
+                        if (currentPlaceholder == placeholderToDestroy)
+                        {
+                            currentPlaceholder = null;
+                        }
 
                         if (targetColumn != null)
                         {
@@ -210,7 +234,7 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
                             targetColumn.RefreshLayout();
                         }
                     }
-                });
+                }).id;
 
         }
         else
@@ -223,6 +247,24 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
         {
             lastHoveredColumn.ResetAutoScrollExpansion();
             lastHoveredColumn = null;
+        }
+    }
+
+    private void CleanupPlaceholder()
+    {
+        if (currentPlaceholder != null)
+        {
+            DayColumn col = currentPlaceholder.transform.parent != null ? currentPlaceholder.transform.parent.GetComponent<DayColumn>() : null;
+            transform.SetParent(currentPlaceholder.transform.parent, false);
+            transform.SetSiblingIndex(currentPlaceholder.transform.GetSiblingIndex());
+
+            Destroy(currentPlaceholder);
+            currentPlaceholder = null;
+
+            if (col != null)
+            {
+                col.RefreshLayout();
+            }
         }
     }
 }

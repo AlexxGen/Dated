@@ -38,4 +38,9 @@ public class UIHandler : MonoBehaviour
             curCharacter = 0;
         }
     }
+
+    public void NextWeek()
+    {
+        gameManager.StatCheck();
+    }
 }
