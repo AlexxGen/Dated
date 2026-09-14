@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 66, y: -24.2}
+  m_AnchoredPosition: {x: 64.8, y: -18}
   m_SizeDelta: {x: 85.6666, y: 28.300797}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3991832889187471186
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Date Night
+  m_text: Watch Soccer Game with Jessie
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -176,7 +176,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -757, y: 241.6947}
-  m_SizeDelta: {x: 115, y: 240}
+  m_SizeDelta: {x: 115, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &663941263730172753
 CanvasRenderer:
@@ -243,6 +243,7 @@ MonoBehaviour:
   placeholderPrefab: {fileID: 8774982572740335558, guid: 01d5c06f0e2f37c4e8dee9ce207cb00b, type: 3}
   returnTweenTime: 0.25
   returnEaseType: 6
+  postIt: {fileID: 0}
 --- !u!114 &5871500038310577039
 MonoBehaviour:
   m_ObjectHideFlags: 0
