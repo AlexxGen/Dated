@@ -87,7 +87,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &905354136090894120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1566014488719412895}
+  - component: {fileID: 7771118164879456054}
   m_Layer: 5
   m_Name: Notification
   m_TagString: Untagged
@@ -278,6 +279,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7771118164879456054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2163551897967608491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d2bc1f43090314abe54f288525945e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  MessageImage: {fileID: 2193222801331790582}
+  HeaderText: {fileID: 2163332055134955161}
+  BodyText: {fileID: 421480348558436350}
 --- !u!1 &4396310576052419141
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,7 +359,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -952371243, guid: 7a8588921686b094780f7ca15a46290b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
