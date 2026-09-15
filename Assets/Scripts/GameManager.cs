@@ -1,8 +1,11 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+	public static readonly int MESSAGE_MOOD_POSITIVE_NEGATIVE_CUTOFF = 51;
+	
     [SerializeField] private int academicStatP = 100;
     //[SerializeField] private int socialStatP;
     [SerializeField] private int extracurricularStatP = 100;
@@ -111,4 +114,47 @@ public class GameManager : MonoBehaviour
     {
 
     }
+	
+	public int ScoreOfCategory(EventCategory category, Character character)
+	{
+		switch (category)
+		{
+			case EventCategory.SOCIAL:
+				return socialStat;
+			case EventCategory.ACADEMIC:
+				switch (character) {
+					case Character.JESSIE:
+						return academicStatJ;
+					case Character.PETER:
+						return academicStatP;
+				}
+				break;
+			case EventCategory.EXTRACURRICULAR:
+				switch (character) {
+					case Character.JESSIE:
+						return extracurricularStatJ;
+					case Character.PETER:
+						return extracurricularStatP;
+				}
+				break;
+		}
+		throw new ArgumentException("Error: Char or event category not found");
+	}
+	
+	public MessageMood MoodOfCategory(EventCategory category, Character character)
+	{
+		if (ScoreOfCategory(category, character) > MESSAGE_MOOD_POSITIVE_NEGATIVE_CUTOFF)
+		{
+			return MessageMood.POSITIVE;
+		}
+		else
+		{
+			return MessageMood.NEGATIVE;
+		}
+	}
+	
+	
+	
+	
+	
 }
