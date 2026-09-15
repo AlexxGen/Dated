@@ -29,5 +29,25 @@ public class Message
 	}
 	
 	
+	public bool LessThan(Message other)
+	{
+		if (Medium < other.Medium)
+		{
+			return true;
+		}
+		else if (other.Medium < Medium)
+		{
+			return false;
+		}
+		else if (Sender.CompareTo(other.Sender) < 0)
+		{
+			return true;
+		}
+		else if (Sender.CompareTo(other.Sender) > 0)
+		{
+			return false;
+		}
+		return true;
+	}
 	
 }

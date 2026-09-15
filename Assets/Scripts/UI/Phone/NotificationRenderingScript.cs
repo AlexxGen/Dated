@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class PhoneRenderingScript : MonoBehaviour
+public class NotificationRenderingScript : MonoBehaviour
 {
 	[SerializeField] private Image MessageImage;
 	[SerializeField] private TMP_Text HeaderText;
@@ -50,7 +50,7 @@ public class PhoneRenderingScript : MonoBehaviour
 	}
 	
 	
-	void ShowMessage(Message message)
+	public void ShowMessage(Message message)
 	{
 		MessageImage.sprite = CorrectBackgroundImage(message);
 		HeaderText.text = message.Sender;
