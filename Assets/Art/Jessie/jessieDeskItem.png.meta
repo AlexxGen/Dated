@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0b2949f7f1e2e0548ae2d28562abae29
+guid: 9238da022bbeb034cacc6738acf3283a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 38734147969105329
-    second: titleBg_0
+      213: 5450301981639368603
+    second: jessieDeskItem_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: titleBg_0
+      name: jessieDeskItem_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1bd306a908c998000800000000000000
-      internalID: 38734147969105329
+      spriteID: b9fd83e76cc53ab40800000000000000
+      internalID: 5450301981639368603
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      titleBg_0: 38734147969105329
+      jessieDeskItem_0: 5450301981639368603
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 35aabd46f0902f949adfca41dbfeacd1
+guid: 8bb4d98c3dd230f4a83931e1a7ceca98
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3331808002684657063
-    second: medal_0
+      213: -9071861236954982879
+    second: PeterMedal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: medal_0
+      name: PeterMedal_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ad92dbc9b5fc3e20800000000000000
-      internalID: 3331808002684657063
+      spriteID: 12699af05464a1280800000000000000
+      internalID: -9071861236954982879
       vertices: []
       indices: 
       edges: []
@@ -140,7 +140,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -149,7 +149,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PeterMedal_0: -9071861236954982879
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
