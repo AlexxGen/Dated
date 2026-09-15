@@ -92,6 +92,8 @@ public class UIHandler : MonoBehaviour
         pageFlips[0].GetComponent<Animator>().Play("notebook");
         StartCoroutine(waitForPageFlip());
 		
+		renderMessagesOnPhone();
+		
 		
 		
     }
