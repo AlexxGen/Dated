@@ -1,11 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PhoneRenderingScript : MonoBehaviour
 {
 	
-	[SerializeField] private NotificationRenderingScript topNotification;
-	[SerializeField] private NotificationRenderingScript bottomNotification;
-	
+	[SerializeField] private NotificationRenderingScript[] topNotification;	
 	
 	
 	void Start()
@@ -18,17 +17,10 @@ public class PhoneRenderingScript : MonoBehaviour
 		
 	}
 	
-	public void RenderNotifications(Message first, Message second)
+	public void RenderNotifications(List<Message> toShow)
 	{
-		if (first.LessThan(second))
-		{
-			Message temp = second;
-			second = first;
-			first = temp;
-		}
 		
-		topNotification.ShowMessage(first);
-		bottomNotification.ShowMessage(second);
+		
 		
 	}
 }
