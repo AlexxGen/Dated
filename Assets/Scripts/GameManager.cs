@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-	public static readonly int MESSAGE_MOOD_POSITIVE_NEGATIVE_CUTOFF = 51;
+	public static readonly int MESSAGE_MOOD_POSITIVE_NEGATIVE_CUTOFF = 50;
 	
     [SerializeField] private int academicStatP = 100;
     //[SerializeField] private int socialStatP;
