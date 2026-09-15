@@ -25,6 +25,13 @@ public class TitleManager : MonoBehaviour
         {
             ExitGame();
         }
+
+        LeanTween.scale(m_title, new Vector3(1.5f, 1.5f, 1.5f), 0.5f)
+            .setEaseInOutSine()
+            .setOnComplete(() =>
+            {
+                LeanTween.scale(m_title, new Vector3(1.5f, 1.5f, 1.5f), 0.5f).setEaseInOutSine();
+            });
     }
 
     private void EnterGame()

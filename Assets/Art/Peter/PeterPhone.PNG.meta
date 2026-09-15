@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c077f489e801f334ba41de7e4aad9414
+guid: 5c231993c6e73f446a916366f7f456bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3642478281760095685
-    second: plantGirl_0
+      213: 4912120713214370559
+    second: PeterPhone_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -74,7 +74,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plantGirl_0
+      name: PeterPhone_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b324d992d41537dc0800000000000000
-      internalID: -3642478281760095685
+      spriteID: ff22bfc53cb5b2440800000000000000
+      internalID: 4912120713214370559
       vertices: []
       indices: 
       edges: []

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6828216203c46e448a9186861e1a9284
+guid: 4b6f1bda1d44e3a4ba1291cdf8abed4f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8580419255499283418
-    second: 748BF08F-FBF9-4886-809C-431D820D3FBF_0
+      213: -6752090504991664991
+    second: PostItFlipFinalSheet (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -74,10 +74,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,11 +115,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_0
+      name: PostItFlipFinalSheet (1)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2160
+        y: 1080
         width: 1920
         height: 1080
       alignment: 0
@@ -130,124 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6242b0ce52a3ce880800000000000000
-      internalID: -8580419255499283418
+      spriteID: 1a41fa6b571cb42a0800000000000000
+      internalID: -6752090504991664991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_1
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 2160
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 306d0e5bded410e4092f05d87c27f773
-      internalID: 1616283885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_2
-      rect:
-        serializedVersion: 2
-        x: 3840
-        y: 2160
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8db90892d0d7a24429dfe268dcb73242
-      internalID: -1664848822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_3
-      rect:
-        serializedVersion: 2
-        x: 5760
-        y: 2160
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2da9cdcec1f83ba479221b8c41d053f8
-      internalID: -2073150719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_4
-      rect:
-        serializedVersion: 2
-        x: 7680
-        y: 2160
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d83cb1f62e8e2a8468df57a99a657cb9
-      internalID: 407325980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1080
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a13ea7a34071d1f41b5b5539ed74daf1
-      internalID: 1245805949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_6
+      name: PostItFlipFinalSheet (1)_1
       rect:
         serializedVersion: 2
         x: 1920
@@ -262,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 983741a6a37f96742ac3c001e70ca3b4
-      internalID: 1025557843
+      spriteID: 1da70b44ca5fa6c418dab8dd5f13c5a8
+      internalID: -949339335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_7
+      name: PostItFlipFinalSheet (1)_2
       rect:
         serializedVersion: 2
         x: 3840
@@ -284,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d107292e48473df4b8959f6e66d5991b
-      internalID: 2105545292
+      spriteID: 6729e195c5b7f5d459d2f60a30ad26e7
+      internalID: 1174372448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_8
+      name: PostItFlipFinalSheet (1)_3
       rect:
         serializedVersion: 2
         x: 5760
@@ -306,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a4a83fa272700c4483a3994a29733fa
-      internalID: 516698184
+      spriteID: 9d1dbc7fecfc8c84b8f4f5eac89e440b
+      internalID: -1238174344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_9
+      name: PostItFlipFinalSheet (1)_4
       rect:
         serializedVersion: 2
         x: 7680
@@ -328,14 +218,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7889566cf37ac9040bfa22e3f4b571f9
-      internalID: 74948379
+      spriteID: 646afe44f8a92524a8e6d635558c1a84
+      internalID: 1254434190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_10
+      name: PostItFlipFinalSheet (1)_5
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 1080
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa71e6708ad9f664680cd02361b66783
+      internalID: 883424034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostItFlipFinalSheet (1)_6
       rect:
         serializedVersion: 2
         x: 0
@@ -350,14 +262,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65bba5fcf6c0ac34d8ddb9fb41f32e82
-      internalID: -1488323420
+      spriteID: eff030b9af0d5e447bd107682576a18e
+      internalID: 1457140429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_11
+      name: PostItFlipFinalSheet (1)_7
       rect:
         serializedVersion: 2
         x: 1920
@@ -372,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 777f89fab5e1e1f4cb49436ceb48b1f9
-      internalID: -4201598
+      spriteID: 3930f7fdb150ca44085d7cac329718b7
+      internalID: 1769379951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_12
+      name: PostItFlipFinalSheet (1)_8
       rect:
         serializedVersion: 2
         x: 3840
@@ -394,14 +306,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c27405d131e457944834a3d60c9879bc
-      internalID: 88851579
+      spriteID: bd0986015401a7b408a809d09d903a6a
+      internalID: -1383505741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_13
+      name: PostItFlipFinalSheet (1)_9
       rect:
         serializedVersion: 2
         x: 5760
@@ -416,14 +328,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6764bf0a6ac46c449051ee43824c071
-      internalID: 1365807860
+      spriteID: 17ec9eeef1e249342a8621dc00bb42b6
+      internalID: -780505288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 748BF08F-FBF9-4886-809C-431D820D3FBF_14
+      name: PostItFlipFinalSheet (1)_10
       rect:
         serializedVersion: 2
         x: 7680
@@ -438,8 +350,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7f685b8171572d4dbb63847fc5a6a0e
-      internalID: 1887075099
+      spriteID: 398ecd77ad0f1ed42a85443cea446359
+      internalID: -1074137791
       vertices: []
       indices: 
       edges: []
@@ -448,7 +360,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 51d799c14ae65174a8796a89352933b6
+    spriteID: eb00072855996fa48895d72f621abc0c
     internalID: 0
     vertices: []
     indices: 
@@ -458,23 +370,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":3.0},"gridSpriteSize":{"x":1920.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":2.0},"gridSpriteSize":{"x":1920.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      748BF08F-FBF9-4886-809C-431D820D3FBF_0: -8580419255499283418
-      748BF08F-FBF9-4886-809C-431D820D3FBF_1: 1616283885
-      748BF08F-FBF9-4886-809C-431D820D3FBF_10: -1488323420
-      748BF08F-FBF9-4886-809C-431D820D3FBF_11: -4201598
-      748BF08F-FBF9-4886-809C-431D820D3FBF_12: 88851579
-      748BF08F-FBF9-4886-809C-431D820D3FBF_13: 1365807860
-      748BF08F-FBF9-4886-809C-431D820D3FBF_14: 1887075099
-      748BF08F-FBF9-4886-809C-431D820D3FBF_2: -1664848822
-      748BF08F-FBF9-4886-809C-431D820D3FBF_3: -2073150719
-      748BF08F-FBF9-4886-809C-431D820D3FBF_4: 407325980
-      748BF08F-FBF9-4886-809C-431D820D3FBF_5: 1245805949
-      748BF08F-FBF9-4886-809C-431D820D3FBF_6: 1025557843
-      748BF08F-FBF9-4886-809C-431D820D3FBF_7: 2105545292
-      748BF08F-FBF9-4886-809C-431D820D3FBF_8: 516698184
-      748BF08F-FBF9-4886-809C-431D820D3FBF_9: 74948379
+      PostItFlipFinalSheet (1)_0: -6752090504991664991
+      PostItFlipFinalSheet (1)_1: -949339335
+      PostItFlipFinalSheet (1)_10: -1074137791
+      PostItFlipFinalSheet (1)_11: 1753754751
+      PostItFlipFinalSheet (1)_2: 1174372448
+      PostItFlipFinalSheet (1)_3: -1238174344
+      PostItFlipFinalSheet (1)_4: 1254434190
+      PostItFlipFinalSheet (1)_5: 883424034
+      PostItFlipFinalSheet (1)_6: 1457140429
+      PostItFlipFinalSheet (1)_7: 1769379951
+      PostItFlipFinalSheet (1)_8: -1383505741
+      PostItFlipFinalSheet (1)_9: -780505288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

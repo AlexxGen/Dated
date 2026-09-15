@@ -171,39 +171,61 @@ public class DayColumn : MonoBehaviour
         return totalHeight <= availableHeight;
     }
 
-    public int DetermineInsertIndex(Vector2 mousePosition, Transform ignoreTransform = null)
+    public int DetermineInsertIndex(Vector2 mouseScreenPosition, Transform ignoreTransform = null)
     {
-        int insertIndex = transform.childCount;
-
+        List<RectTransform> validChildren = new List<RectTransform>();
         for (int i = 0; i < transform.childCount; i++)
         {
-            Transform childTransform = transform.GetChild(i);
+            Transform child = transform.GetChild(i);
+            if (child == ignoreTransform || !child.gameObject.activeSelf) continue;
 
-            if (childTransform == ignoreTransform)
-                continue;
-
-            RectTransform child = childTransform.GetComponent<RectTransform>();
-
-            if (child != null)
+            RectTransform childRect = child.GetComponent<RectTransform>();
+            if (childRect != null)
             {
-                Vector3 childCenterWorld = child.TransformPoint(child.rect.center);
-                Vector2 childCenterScreen = RectTransformUtility.WorldToScreenPoint(null, childCenterWorld);
-
-                if (mousePosition.y > childCenterScreen.y)
-                {
-                    insertIndex = i;
-
-                    if (ignoreTransform != null && ignoreTransform.parent == transform && ignoreTransform.GetSiblingIndex() < i)
-                    {
-                        insertIndex--;
-                    }
-                    break;
-                }
+                validChildren.Add(childRect);
             }
         }
 
-        return insertIndex;        
-    
+        if (validChildren.Count == 0) return 0;
+
+        Canvas rootCanvas = GetComponentInParent<Canvas>()?.rootCanvas;
+        Camera uiCamera = (rootCanvas != null && rootCanvas.renderMode == RenderMode.ScreenSpaceOverlay) ? null: rootCanvas?.worldCamera;
+
+        Vector3 firstWorldCenter = validChildren[0].TransformPoint(validChildren[0].rect.center);
+        Vector2 firstScreenCenter = RectTransformUtility.WorldToScreenPoint(uiCamera, firstWorldCenter);
+        if (mouseScreenPosition.y > firstScreenCenter.y)
+        {
+            return validChildren[0].GetSiblingIndex();
+        }
+
+        for (int i = 0; i < validChildren.Count - 1; i++)
+        {
+            Vector3 currentWorld = validChildren[i].TransformPoint(validChildren[i].rect.center);
+            Vector3 nextWorld = validChildren[i + 1].TransformPoint(validChildren[i + 1].rect.center);
+
+            Vector2 currentScreen = RectTransformUtility.WorldToScreenPoint(uiCamera, currentWorld);
+            Vector2 nextScreen = RectTransformUtility.WorldToScreenPoint(uiCamera, nextWorld);
+
+            float midY = (currentScreen.y + nextScreen.y) / 2f;
+
+            if (mouseScreenPosition.y > midY)
+            {
+                int targetIndex = validChildren[i + 1].GetSiblingIndex();
+
+                if (ignoreTransform != null && ignoreTransform.parent == transform && ignoreTransform.GetSiblingIndex() < targetIndex)
+                {
+                    targetIndex--;
+                }
+                return targetIndex;
+            }
+        }
+
+        int lastIndex = validChildren[validChildren.Count - 1].GetSiblingIndex();
+        if (ignoreTransform != null && ignoreTransform.parent == transform && ignoreTransform.GetSiblingIndex() < lastIndex)
+        {
+            return lastIndex;
+        }
+        return lastIndex + 1;
     }
 
     public void ClearColumn()
