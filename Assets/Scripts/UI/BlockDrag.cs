@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
-using TMPro;
 
 public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
@@ -23,8 +22,6 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
     private RectTransform rectTransform;
 
     private DayColumn lastHoveredColumn;
-
-    [SerializeField] private TextMeshProUGUI postIt;
 
     private int returnTweenId = -1;
 
@@ -46,8 +43,6 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
         LeanTween.cancel(gameObject);
 
         CleanupPlaceholder();
-
-        postIt.text = GetComponent<BlockData>().Dialogue;
 
         previousParent = transform.parent;
         previousSiblingIndex = transform.GetSiblingIndex();
@@ -271,10 +266,5 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
                 col.RefreshLayout();
             }
         }
-    }
-
-    private void Start()
-    {
-        postIt = GameObject.FindWithTag("Post-It").GetComponent<TextMeshProUGUI>();
     }
 }

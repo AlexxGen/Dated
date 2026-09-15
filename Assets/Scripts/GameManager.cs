@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,8 +20,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int freeHoursJ;
 
     [SerializeField] private DayColumn[] spawnColumns;
-    [SerializeField] private TextMeshProUGUI postItJ;
-    [SerializeField] private TextMeshProUGUI postItP;
 
     [SerializeField] private BlockGenerator blockGenerator;
 
@@ -107,14 +104,6 @@ public class GameManager : MonoBehaviour
 
         curWeek++;
         blockGenerator.SpawnBlock();
-
-        if (postItJ == null || postItP == null)
-        {
-            Debug.Log("Post it(s) not found!");
-        }
-
-        postItJ.text = "";
-        postItP.text = "";
 
     }
 
