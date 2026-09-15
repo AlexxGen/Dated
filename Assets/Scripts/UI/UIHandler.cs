@@ -23,10 +23,11 @@ public class UIHandler : MonoBehaviour
 		}
 		throw new ArgumentException("Current character is neither 0 nor 1");
 	}
-    [SerializeField] private GameObject[] planners; 
+    [SerializeField] private GameObject[] planners;
 	
 	[SerializeField] private PhoneRenderingScript phone;
-	
+	    [SerializeField] private Image fadeScreen;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,6 +42,7 @@ public class UIHandler : MonoBehaviour
 
     public void SwapCharacters()
     {
+        StartCoroutine(fadeAnim());
         if (curCharacter == 0)
         {
             planners[0].gameObject.SetActive(false);
@@ -97,10 +99,44 @@ public class UIHandler : MonoBehaviour
 
     IEnumerator waitForPageFlip()
     {
-        yield return new WaitForSeconds(0.75f);
-
         gameManager.StatCheck();
+        yield return new WaitForSeconds(0.583f);
+
         pageFlips[0].gameObject.SetActive(false);
         pageFlips[1].gameObject.SetActive(false);
+    }
+
+    IEnumerator fadeAnim()
+    {
+
+        float timeElapsed = 0.0f;
+
+        float oldValue = 0.0f;
+
+        while (timeElapsed < 1)
+        {
+            float t = timeElapsed / 1;
+
+            float curValue = Mathf.Lerp(oldValue, 1.0f, t);
+
+            fadeScreen.material.SetFloat("_Fade", curValue);
+
+            oldValue = curValue;
+        }
+
+        timeElapsed = 0.0f;
+
+        while (timeElapsed < 1)
+        {
+            float t = timeElapsed / 1;
+
+            float curValue = Mathf.Lerp(oldValue, 0.0f, t);
+
+            fadeScreen.material.SetFloat("_Fade", curValue);
+
+            oldValue = curValue;
+        }
+
+        yield return null;
     }
 }
