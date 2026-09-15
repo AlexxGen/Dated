@@ -1,23 +1,28 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
 	public static readonly int MESSAGE_MOOD_POSITIVE_NEGATIVE_CUTOFF = 50;
-	
-    [SerializeField] private int academicStatP = 100;
+
+    [SerializeField] private float academicStatP = 100;
     //[SerializeField] private int socialStatP;
-    [SerializeField] private int extracurricularStatP = 100;
-    [SerializeField] private int academicStatJ = 100;
-    [SerializeField] private int socialStat = 100;
-    [SerializeField] private int extracurricularStatJ = 100;
+    [SerializeField] private float extracurricularStatP = 100;
+    [SerializeField] private float academicStatJ = 100;
+    [SerializeField] private float socialStat = 100;
+    [SerializeField] private float extracurricularStatJ = 100;
+    [SerializeField] private float lerpDuration = 3;
 
     public int curWeek;
 
     //Take the type and count how many of a certain type are still in the new blocks to determine what changes are needed for the stats
     public List<BlockData> newBlocksJ = new List<BlockData>();
     public List<BlockData> newBlocksP = new List<BlockData>();
+    public List<BlockData> placedBlocksJ = new List<BlockData>();
+    public List<BlockData> placedBlocksP = new List<BlockData>();
 
     [SerializeField] private int freeHoursP;
     [SerializeField] private int freeHoursJ;
@@ -25,6 +30,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private DayColumn[] spawnColumns;
 
     [SerializeField] private BlockGenerator blockGenerator;
+    [SerializeField] private Image[] shaders;
 
     private void OnEnable()
     {
@@ -68,23 +74,31 @@ public class GameManager : MonoBehaviour
 
     public void StatCheck()
     {
+
+        float newAcademicStatJ = academicStatJ;
+        float newAcademicStatP = academicStatP;
+        float newSocialStat = socialStat;
+        float newExtraStatJ = extracurricularStatJ;
+        float newExtraStatP = extracurricularStatP;
+
         if (curWeek == 4)
         {
             Endings();
             return;
         }
+
         foreach (BlockData block in newBlocksJ)
         {
             switch (block.Category)
             {
                 case EventCategory.ACADEMIC:
-                    academicStatJ -= Mathf.FloorToInt(block.Length / 60);
+                    newAcademicStatJ -= block.Length / 20;
                     break;
                 case EventCategory.SOCIAL:
-                    socialStat -= Mathf.FloorToInt(block.Length / 60);
+                    newSocialStat -= block.Length / 20;
                     break;
                 case EventCategory.EXTRACURRICULAR:
-                    extracurricularStatJ -= Mathf.FloorToInt(block.Length / 60);
+                    newExtraStatJ -= block.Length / 20;
                     break;
             }
         }
@@ -94,18 +108,51 @@ public class GameManager : MonoBehaviour
             switch (block.Category)
             {
                 case EventCategory.ACADEMIC:
-                    academicStatP -= Mathf.FloorToInt(block.Length / 60);
+                    newAcademicStatP -= block.Length / 40;
                     break;
                 case EventCategory.SOCIAL:
-                    socialStat -= Mathf.FloorToInt(block.Length / 60);
+                    newSocialStat -= block.Length / 40;
                     break;
                 case EventCategory.EXTRACURRICULAR:
-                    extracurricularStatP -= Mathf.FloorToInt(block.Length / 60);
+                    newExtraStatP -= block.Length / 40;
+                    break;
+            }
+        }
+
+        foreach (BlockData block in placedBlocksJ)
+        {
+            switch (block.Category)
+            {
+                case EventCategory.ACADEMIC:
+                    newAcademicStatJ += block.Length / 60;
+                    break;
+                case EventCategory.SOCIAL:
+                    newSocialStat += block.Length / 60;
+                    break;
+                case EventCategory.EXTRACURRICULAR:
+                    newExtraStatJ += block.Length / 60;
+                    break;
+            }
+        }
+
+        foreach (BlockData block in placedBlocksP)
+        {
+            switch (block.Category)
+            {
+                case EventCategory.ACADEMIC:
+                    newAcademicStatP += block.Length / 60;
+                    break;
+                case EventCategory.SOCIAL:
+                    newSocialStat += block.Length / 60;
+                    break;
+                case EventCategory.EXTRACURRICULAR:
+                    newExtraStatP += block.Length / 60;
                     break;
             }
         }
 
         curWeek++;
+        StartCoroutine(ShaderLerp(newExtraStatJ, newExtraStatP, newSocialStat, newAcademicStatJ, newAcademicStatP));
         blockGenerator.SpawnBlock();
 
     }
@@ -120,21 +167,21 @@ public class GameManager : MonoBehaviour
 		switch (category)
 		{
 			case EventCategory.SOCIAL:
-				return socialStat;
+				return Mathf.RoundToInt(socialStat);
 			case EventCategory.ACADEMIC:
 				switch (character) {
 					case Character.JESSIE:
-						return academicStatJ;
+						return Mathf.RoundToInt(academicStatJ);
 					case Character.PETER:
-						return academicStatP;
+						return Mathf.RoundToInt(academicStatP);
 				}
 				break;
 			case EventCategory.EXTRACURRICULAR:
 				switch (character) {
 					case Character.JESSIE:
-						return extracurricularStatJ;
+						return Mathf.RoundToInt(extracurricularStatJ);
 					case Character.PETER:
-						return extracurricularStatP;
+						return Mathf.RoundToInt(extracurricularStatP);
 				}
 				break;
 		}
@@ -152,9 +199,68 @@ public class GameManager : MonoBehaviour
 			return MessageMood.NEGATIVE;
 		}
 	}
-	
-	
-	
-	
-	
+
+
+
+    IEnumerator ShaderLerp(float newExtraStatJ, float newExtraStatP, float newSocialStat, float newAcademicStatJ, float newAcademicStatP)
+    {
+        float timeElapsed = 0.0f;
+
+        while (timeElapsed < lerpDuration)
+        {
+            float t = timeElapsed / lerpDuration;
+
+            float curExtraStatJ = Mathf.Clamp(Mathf.Lerp(extracurricularStatJ, newExtraStatJ, t), 0.0f, 100.0f);
+            float curExtraStatP = Mathf.Clamp(Mathf.Lerp(extracurricularStatP, newExtraStatP, t), 0.0f, 100.0f);
+
+            float curSocialStat = Mathf.Clamp(Mathf.Lerp(socialStat, newSocialStat, t), 0.0f, 100.0f);
+
+            float curAcademicStatJ = Mathf.Clamp(Mathf.Lerp(academicStatJ, newAcademicStatJ, t), 0.0f, 100.0f);
+            float curAcademicStatP = Mathf.Clamp(Mathf.Lerp(academicStatP, newAcademicStatP, t), 0.0f, 100.0f);
+
+            shaders[0].material.SetFloat("_amountRoseTint", curSocialStat / 100);
+            shaders[1].material.SetFloat("_amountRoseTint", curSocialStat / 100);
+            shaders[0].material.SetFloat("_amountOfStars", curAcademicStatJ / 100);
+            shaders[1].material.SetFloat("_amountOfStars", curAcademicStatP / 100);
+
+            //Change _amountOfStars to be whatever the reference value of the medals in the shadergraph is
+            //shaders[2].material.SetFloat("_amountOfStars", curExtraStatJ / 100);
+            //shaders[3].material.SetFloat("_amountOfStars", curExtraStatP / 100);
+
+            timeElapsed += Time.deltaTime;
+
+            yield return null;
+
+        }
+
+
+        shaders[0].material.SetFloat("_amountRoseTint", Mathf.Clamp(newSocialStat / 100, 0.0f, 100.0f));
+        shaders[1].material.SetFloat("_amountRoseTint", Mathf.Clamp(newSocialStat / 100, 0.0f, 100.0f));
+        shaders[0].material.SetFloat("_amountOfStars", Mathf.Clamp(newAcademicStatJ / 100, 0.0f, 100.0f));
+        shaders[1].material.SetFloat("_amountOfStars", Mathf.Clamp(newAcademicStatP / 100, 0.0f, 100.0f));
+
+        //Change _amountOfStars to be whatever the reference value of the medals in the shadergraph is
+        //shaders[2].material.SetFloat("_amountOfStars", Mathf.Clamp(newExtraStatJ / 100, 0.0f, 100.0f));
+        //shaders[3].material.SetFloat("_amountOfStars", Mathf.Clamp(newExtraStatP, 0.0f, 100.0f));
+
+        socialStat = Mathf.Clamp(newSocialStat, 0.0f, 100.0f);
+        academicStatJ = Mathf.Clamp(newAcademicStatJ, 0.0f, 100.0f);
+        academicStatP = Mathf.Clamp(newAcademicStatP, 0.0f, 100.0f);
+        extracurricularStatJ = Mathf.Clamp(newExtraStatJ, 0.0f, 100.0f);
+        extracurricularStatP = Mathf.Clamp(newExtraStatP, 0.0f, 100.0f);
+
+    }
+
+    private void Start()
+    {
+        shaders[0].material.SetFloat("_amountRoseTint", 1);
+        shaders[1].material.SetFloat("_amountRoseTint", 1);
+        shaders[0].material.SetFloat("_amountOfStars", 1);
+        shaders[1].material.SetFloat("_amountOfStars", 1);
+
+        //Change _amountOfStars to be whatever the reference value of the medals in the shadergraph is
+        //shaders[2].material.SetFloat("_amountOfStars", 1);
+        //shaders[3].material.SetFloat("_amountOfStars", 1);
+    }
+
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,7 @@ public class UIHandler : MonoBehaviour
 
     [SerializeField] private Button nextWeekBtn;
     [SerializeField] private Button swapCharBtn;
+    [SerializeField] private GameObject[] pageFlips;
     [SerializeField] private int curCharacter;
     [SerializeField] private GameObject[] planners; 
 
@@ -41,6 +43,20 @@ public class UIHandler : MonoBehaviour
 
     public void NextWeek()
     {
+
+        pageFlips[0].gameObject.SetActive(true);
+        pageFlips[1].gameObject.SetActive(true);
+        pageFlips[0].GetComponent<Animator>().Play("notebook");
+        pageFlips[0].GetComponent<Animator>().Play("notebook");
+        StartCoroutine(waitForPageFlip());
+    }
+
+    IEnumerator waitForPageFlip()
+    {
+        yield return new WaitForSeconds(0.75f);
+
         gameManager.StatCheck();
+        pageFlips[0].gameObject.SetActive(false);
+        pageFlips[1].gameObject.SetActive(false);
     }
 }
