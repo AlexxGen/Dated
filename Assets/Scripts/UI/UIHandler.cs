@@ -62,7 +62,6 @@ public class UIHandler : MonoBehaviour
 		List<Message> toReturn = new List<Message>();
 		
 		foreach (EventCategory category in Enum.GetValues(typeof(EventCategory))) {
-			Character currentCharacter = Character.JESSIE;
 			GlobalData.GetMessage(
 				getCurrentCharacter(),
 				category,
