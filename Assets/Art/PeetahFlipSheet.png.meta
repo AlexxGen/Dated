@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1518f387b1ecd8f4cb686280c64ed9fb
+guid: 162e147024a1a5945a4d37e680881602
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7828517383651434541
-    second: pageFlipSpriteSheet_0
+      213: 8859254458128222379
+    second: PeetahFlipSheet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -77,7 +77,7 @@ TextureImporter:
     maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pageFlipSpriteSheet_0
+      name: PeetahFlipSheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1080
-        width: 1920
-        height: 1080
+        x: 958
+        y: 190
+        width: 538
+        height: 811
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3df5c75bae48b5390800000000000000
-      internalID: -7828517383651434541
+      spriteID: ba84787cdf462fa70800000000000000
+      internalID: 8859254458128222379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pageFlipSpriteSheet_1
+      name: PeetahFlipSheet_1
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 1080
-        width: 1920
-        height: 1080
+        x: 2868
+        y: 190
+        width: 512
+        height: 857
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1fbf2ff9e8ced14cbe8556e18896511
-      internalID: -1035617993
+      spriteID: 64eb5f30d9454984c8df854984f9bb5e
+      internalID: 1974303863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pageFlipSpriteSheet_2
+      name: PeetahFlipSheet_2
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 1080
-        width: 1920
-        height: 1080
+        x: 4751
+        y: 196
+        width: 394
+        height: 884
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4401e585deaf6824d923ffb55f60b410
-      internalID: 1227192845
+      spriteID: 622303d45331c2e4c934d4dc58b6377e
+      internalID: -87738846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pageFlipSpriteSheet_3
+      name: PeetahFlipSheet_3
       rect:
         serializedVersion: 2
-        x: 5760
-        y: 1080
-        width: 1920
-        height: 1080
+        x: 6569
+        y: 190
+        width: 328
+        height: 890
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 478cfeb9c7753434ca91b2c1e3b84ef3
-      internalID: 1584213562
+      spriteID: 33da07c419b17ad409f15183abd57a96
+      internalID: -348406916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pageFlipSpriteSheet_4
+      name: PeetahFlipSheet_4
       rect:
         serializedVersion: 2
-        x: 7680
-        y: 1080
-        width: 1920
-        height: 1080
+        x: 8275
+        y: 203
+        width: 374
+        height: 877
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 847dc79b3cddb4347addeb0a3a09ae81
-      internalID: 125122571
+      spriteID: 977f54ffde7df014ca9643690acb10dc
+      internalID: 374692756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pageFlipSpriteSheet_5
+      name: PeetahFlipSheet_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 10073
+        y: 196
+        width: 506
+        height: 884
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cb2c7825d7cc154ab192902a7366ff0
-      internalID: 680582225
+      spriteID: ace89ee9ff1a5ae4faf27f44b2afd253
+      internalID: -248921067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pageFlipSpriteSheet_6
+      name: PeetahFlipSheet_6
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 0
-        width: 1920
-        height: 1080
+        x: 11937
+        y: 190
+        width: 558
+        height: 831
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,74 +262,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a26ab65d85dc7d4f99ed69849abd4d2
-      internalID: -1614013779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pageFlipSpriteSheet_7
-      rect:
-        serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0f8f83db4ce461429b5de63e6803c43
-      internalID: 1462488481
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pageFlipSpriteSheet_8
-      rect:
-        serializedVersion: 2
-        x: 5760
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4185ca286dba54344966490d60bf9352
-      internalID: -1653518304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pageFlipSpriteSheet_9
-      rect:
-        serializedVersion: 2
-        x: 7680
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8fe6a885e819c74abfc016dc7dc78f3
-      internalID: 1164507505
+      spriteID: a149ba5d4afd9e64b8044af9c5b308b6
+      internalID: -1779514195
       vertices: []
       indices: 
       edges: []
@@ -338,7 +272,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e731cd7c42da37148beaff849d67cf0d
+    spriteID: 4c9a5a381b1bba84bbb6a3360805b84e
     internalID: 0
     vertices: []
     indices: 
@@ -348,18 +282,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":2.0},"gridSpriteSize":{"x":1920.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      pageFlipSpriteSheet_0: -7828517383651434541
-      pageFlipSpriteSheet_1: -1035617993
-      pageFlipSpriteSheet_2: 1227192845
-      pageFlipSpriteSheet_3: 1584213562
-      pageFlipSpriteSheet_4: 125122571
-      pageFlipSpriteSheet_5: 680582225
-      pageFlipSpriteSheet_6: -1614013779
-      pageFlipSpriteSheet_7: 1462488481
-      pageFlipSpriteSheet_8: -1653518304
-      pageFlipSpriteSheet_9: 1164507505
+      PeetahFlipSheet_0: 8859254458128222379
+      PeetahFlipSheet_1: 1974303863
+      PeetahFlipSheet_2: -87738846
+      PeetahFlipSheet_3: -348406916
+      PeetahFlipSheet_4: 374692756
+      PeetahFlipSheet_5: -248921067
+      PeetahFlipSheet_6: -1779514195
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

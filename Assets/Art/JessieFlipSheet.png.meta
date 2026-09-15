@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1518f387b1ecd8f4cb686280c64ed9fb
+guid: 0ffe6ca347361aa45bc47994f4ce683b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7828517383651434541
-    second: pageFlipSpriteSheet_0
+      213: 2698955562571385717
+    second: JessieFlipSheet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -77,7 +77,7 @@ TextureImporter:
     maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,11 +115,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pageFlipSpriteSheet_0
+      name: JessieFlipSheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1080
+        y: 0
         width: 1920
         height: 1080
       alignment: 0
@@ -130,124 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3df5c75bae48b5390800000000000000
-      internalID: -7828517383651434541
+      spriteID: 57bc1a3d8cd947520800000000000000
+      internalID: 2698955562571385717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pageFlipSpriteSheet_1
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 1080
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1fbf2ff9e8ced14cbe8556e18896511
-      internalID: -1035617993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pageFlipSpriteSheet_2
-      rect:
-        serializedVersion: 2
-        x: 3840
-        y: 1080
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4401e585deaf6824d923ffb55f60b410
-      internalID: 1227192845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pageFlipSpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 5760
-        y: 1080
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 478cfeb9c7753434ca91b2c1e3b84ef3
-      internalID: 1584213562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pageFlipSpriteSheet_4
-      rect:
-        serializedVersion: 2
-        x: 7680
-        y: 1080
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 847dc79b3cddb4347addeb0a3a09ae81
-      internalID: 125122571
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pageFlipSpriteSheet_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cb2c7825d7cc154ab192902a7366ff0
-      internalID: 680582225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pageFlipSpriteSheet_6
+      name: JessieFlipSheet_1
       rect:
         serializedVersion: 2
         x: 1920
@@ -262,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a26ab65d85dc7d4f99ed69849abd4d2
-      internalID: -1614013779
+      spriteID: 077ee88cf8fe11a42b02a061d467bc2c
+      internalID: -1223025728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pageFlipSpriteSheet_7
+      name: JessieFlipSheet_2
       rect:
         serializedVersion: 2
         x: 3840
@@ -284,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0f8f83db4ce461429b5de63e6803c43
-      internalID: 1462488481
+      spriteID: 2ee4fbc7170b1364d9ab317b0a190024
+      internalID: -1846123318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pageFlipSpriteSheet_8
+      name: JessieFlipSheet_3
       rect:
         serializedVersion: 2
         x: 5760
@@ -306,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4185ca286dba54344966490d60bf9352
-      internalID: -1653518304
+      spriteID: f9c08dcc8b76ef340b42242599a883ca
+      internalID: 1480479114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pageFlipSpriteSheet_9
+      name: JessieFlipSheet_4
       rect:
         serializedVersion: 2
         x: 7680
@@ -328,8 +218,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8fe6a885e819c74abfc016dc7dc78f3
-      internalID: 1164507505
+      spriteID: e62e328ac52c90b4f8764618a1dd4a63
+      internalID: -903388941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JessieFlipSheet_5
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be838568cdd225843ad056c0da380eb0
+      internalID: 1044252681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JessieFlipSheet_6
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78bcab8bbb8c479488f1940975be2cae
+      internalID: -1569187681
       vertices: []
       indices: 
       edges: []
@@ -338,7 +272,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e731cd7c42da37148beaff849d67cf0d
+    spriteID: 7ab58dc5734f0d74992bc53106bdbd5a
     internalID: 0
     vertices: []
     indices: 
@@ -348,18 +282,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":2.0},"gridSpriteSize":{"x":1920.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":1920.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      pageFlipSpriteSheet_0: -7828517383651434541
-      pageFlipSpriteSheet_1: -1035617993
-      pageFlipSpriteSheet_2: 1227192845
-      pageFlipSpriteSheet_3: 1584213562
-      pageFlipSpriteSheet_4: 125122571
-      pageFlipSpriteSheet_5: 680582225
-      pageFlipSpriteSheet_6: -1614013779
-      pageFlipSpriteSheet_7: 1462488481
-      pageFlipSpriteSheet_8: -1653518304
-      pageFlipSpriteSheet_9: 1164507505
+      JessieFlipSheet_0: 2698955562571385717
+      JessieFlipSheet_1: -1223025728
+      JessieFlipSheet_2: -1846123318
+      JessieFlipSheet_3: 1480479114
+      JessieFlipSheet_4: -903388941
+      JessieFlipSheet_5: 1044252681
+      JessieFlipSheet_6: -1569187681
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
