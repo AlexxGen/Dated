@@ -292,6 +292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   MessageImage: {fileID: 2193222801331790582}
+  HeaderText: {fileID: 2163332055134955161}
+  BodyText: {fileID: 421480348558436350}
 --- !u!1 &4396310576052419141
 GameObject:
   m_ObjectHideFlags: 0
