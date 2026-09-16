@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,8 +14,8 @@ public class GameManager : MonoBehaviour
     //[SerializeField] private int socialStatP;
     [SerializeField] private float extracurricularStatP = 100;
     [SerializeField] private float academicStatJ = 100;
-    [SerializeField] private float socialStat = 100;
     [SerializeField] private float extracurricularStatJ = 100;
+    [SerializeField] private float socialStat = 100;
     [SerializeField] private float lerpDuration = 0.583f;
 
     public int curWeek;
@@ -32,6 +33,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private BlockGenerator blockGenerator;
     [SerializeField] private Image[] shaders;
+
+    [SerializeField] private GameObject[] polaroids;
+    [SerializeField] private Sprite[] endings;
 
     private void OnEnable()
     {
@@ -82,9 +86,10 @@ public class GameManager : MonoBehaviour
         float newExtraStatJ = extracurricularStatJ;
         float newExtraStatP = extracurricularStatP;
 
-        if (curWeek == 4)
+        if (curWeek == 3)
         {
             Endings();
+            blockGenerator.clearCols();
             return;
         }
 
@@ -160,7 +165,44 @@ public class GameManager : MonoBehaviour
 
     public void Endings()
     {
+        //var statPairsJ = new (float value, Sprite sprite)[]
+        //{
+        //    (extracurricularStatJ, endings[0]),
+        //    (academicStatJ, endings[1]),
+        //    (socialStat, endings[4])
+        //};
+        //var statPairsP = new (float value, Sprite sprite)[]
+        //{
+        //    (extracurricularStatP, endings[2]),
+        //    (academicStatP, endings[3]),
+        //    (socialStat, endings[4])
+        //};
 
+
+        //var highestTwoJ = statPairsJ
+        //    .OrderByDescending(pair => pair.value)
+        //    .Take(2)
+        //    .ToArray();
+
+        //var highestTwoP = statPairsP
+        //    .OrderByDescending(pair => pair.value)
+        //    .Take(2)
+        //    .ToArray();
+
+        //polaroids[0].GetComponent<Image>().sprite = highestTwoJ[0].sprite;
+        //polaroids[1].GetComponent<Image>().sprite = highestTwoJ[1].sprite;
+        //polaroids[2].GetComponent<Image>().sprite = highestTwoP[0].sprite;
+        //polaroids[3].GetComponent<Image>().sprite = highestTwoP[1].sprite;
+
+        polaroids[0].SetActive(true);
+        polaroids[1].SetActive(true);
+        polaroids[2].SetActive(true);
+        polaroids[3].SetActive(true);
+
+        polaroids[0].GetComponent<Animator>().Play("ThrowJ", 0, 0.0f);
+        polaroids[1].GetComponent<Animator>().Play("ThrowJ", 0, 0.0f);
+        polaroids[2].GetComponent<Animator>().Play("ThrowP", 0, 0.0f);
+        polaroids[3].GetComponent<Animator>().Play("ThrowP", 0, 0.0f);
     }
 	
 	public int ScoreOfCategory(EventCategory category, Character character)
