@@ -146,18 +146,21 @@ public class UIHandler : MonoBehaviour
 
         float oldValue = 0.0f;
 
-        while (timeElapsed < 1)
+        while (timeElapsed < 1.0f)
         {
-            float t = timeElapsed / 1;
+            float t = timeElapsed / 1.0f;
 
             float curValue = Mathf.Lerp(oldValue, 1.0f, t);
+            Debug.Log("Cur Value: " + curValue);
 
             fadeScreen.material.SetFloat("_Fade", curValue);
 
             oldValue = curValue;
 
             timeElapsed += Time.deltaTime;
+            yield return null;
         }
+        fadeScreen.material.SetFloat("_Fade", 1.0f);
 
         timeElapsed = 0.0f;
 
@@ -172,8 +175,8 @@ public class UIHandler : MonoBehaviour
             oldValue = curValue;
 
             timeElapsed += Time.deltaTime;
+            yield return null;
         }
-
-        yield return null;
+        fadeScreen.material.SetFloat("_Fade", 0.0f);
     }
 }

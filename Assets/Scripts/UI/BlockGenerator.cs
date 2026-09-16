@@ -103,4 +103,10 @@ public class BlockGenerator : MonoBehaviour
         SpawnBlock();
         Debug.Log("data found first here:" +  GlobalData.events[0].Name);
     }
+
+    public void clearCols()
+    {
+        foreach (DayColumn col in columns)
+            col.ClearColumn();
+    }
 }
