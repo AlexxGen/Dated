@@ -77,12 +77,14 @@ public class UIHandler : MonoBehaviour
 		List<Message> toReturn = new List<Message>();
 		
 		foreach (EventCategory category in Enum.GetValues(typeof(EventCategory))) {
-			GlobalData.GetMessage(
+			Message messageToRender = GlobalData.GetMessage(
 				getCurrentCharacter(),
 				category,
 				gameManager.MoodOfCategory(category, getCurrentCharacter()),
 				gameManager.curWeek
 			);
+			
+			toReturn.Add(messageToRender);
 		}
 		
 		

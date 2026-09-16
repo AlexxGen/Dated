@@ -19,6 +19,14 @@ public class PhoneRenderingScript : MonoBehaviour
 	
 	public void RenderNotifications(List<Message> toShow)
 	{
+		Debug.Log("Rendering Notifs");
+		
+		for (int i = 0; i < toShow.Count; ++i)
+		{
+			Debug.Log("MESSAGE: " + toShow[i].Sender + ": " + toShow[i].Text);
+		}
+		
+		
 		toShow.Sort(delegate(Message m1, Message m2)
 		{
 			if (m1.LessThan(m2))
