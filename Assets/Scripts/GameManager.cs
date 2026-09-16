@@ -57,9 +57,11 @@ public class GameManager : MonoBehaviour
             {
                 case Character.PETER:
                     newBlocksP.Remove(droppedBlock);
+                    placedBlocksP.Add(droppedBlock);
                     break;
                 case Character.JESSIE:
                     newBlocksJ.Remove(droppedBlock);
+                    placedBlocksJ.Add(droppedBlock);
                     break;
             }
         }
@@ -71,9 +73,11 @@ public class GameManager : MonoBehaviour
             {
                 case Character.PETER:
                     newBlocksP.Add(droppedBlock);
+                    placedBlocksP.Remove(droppedBlock);
                     break;
                 case Character.JESSIE:
                     newBlocksJ.Add(droppedBlock);
+                    placedBlocksJ.Remove(droppedBlock);
                     break;
             }
         }
@@ -92,6 +96,8 @@ public class GameManager : MonoBehaviour
         {
             Endings();
             blockGenerator.clearCols();
+            Debug.Log("Ending");
+            curWeek++;
             return;
         }
 

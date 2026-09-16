@@ -71,8 +71,8 @@ Material:
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
     - _alpha: 0.23
-    - _amountOfStars: 0.82
-    - _amountRoseTint: 0.16
+    - _amountOfStars: 1
+    - _amountRoseTint: 1
     - _smoothness: 10.6
     - _starTiling: 1
     - _vingette: 5.77

@@ -95,6 +95,8 @@ public class BlockGenerator : MonoBehaviour
         }
         gameManager.newBlocksJ = blocksJ;
         gameManager.newBlocksP = blocksP;
+        gameManager.placedBlocksJ = new List<BlockData>();
+        gameManager.placedBlocksP = new List<BlockData>();
 
     }
 
