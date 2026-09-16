@@ -15,13 +15,18 @@ public class TitleManager : MonoBehaviour
     [SerializeField, NotNull] private float m_onScreenY;
     [SerializeField, NotNull] private bool m_onScreen = true;
 
+    private Coroutine tweenTitleRoutine;
+
 
     private void Start()
     {
         m_enterBtn.onClick.AddListener(EnterGame);
         m_quitBtn.onClick.AddListener(QuitGame);
 
-        StartCoroutine(tweenTitle());
+        if (tweenTitleRoutine == null)
+        {
+            tweenTitleRoutine = StartCoroutine(tweenTitle());
+        }
     }
     private void Update()
     {
@@ -41,12 +46,17 @@ public class TitleManager : MonoBehaviour
     {
         LeanTween.moveY(m_root, m_onScreenY, 0.5f).setEaseInOutSine();
         m_onScreen = true;
-        StartCoroutine(tweenTitle());
+        if (tweenTitleRoutine == null)
+        {
+            tweenTitleRoutine = StartCoroutine(tweenTitle());
+        }
 
     }
 
     private void QuitGame()
     {
+        Debug.Log("quit clicked");
+        StopCoroutine(tweenTitleRoutine);
         Application.Quit();
     }
 
@@ -63,5 +73,6 @@ public class TitleManager : MonoBehaviour
 
             yield return new WaitForSeconds(1.0f);
         }
+        tweenTitleRoutine = null;
     }
 }
