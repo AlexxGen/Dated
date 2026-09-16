@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Watch Soccer Game with Jessie
+  m_text: Special Night Out with Jessie
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 645cf2e35ea0ebb4a825154a704a7d72, type: 2}
   m_sharedMaterial: {fileID: 6105604016105987746, guid: 645cf2e35ea0ebb4a825154a704a7d72, type: 2}
@@ -176,7 +176,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -757, y: 241.6947}
-  m_SizeDelta: {x: 115, y: 120}
+  m_SizeDelta: {x: 115, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &663941263730172753
 CanvasRenderer:
