@@ -118,6 +118,7 @@ public class UIHandler : MonoBehaviour
         StartCoroutine(waitForPageFlip());
 		
 		
+		renderMessagesOnPhone();
 		
     }
 
@@ -135,7 +136,6 @@ public class UIHandler : MonoBehaviour
             nextWeekBtn.gameObject.SetActive(false);
         }
 		
-		renderMessagesOnPhone();
 		
     }
 
