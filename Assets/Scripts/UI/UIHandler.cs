@@ -102,8 +102,8 @@ public class UIHandler : MonoBehaviour
 		
         pageFlips[0].gameObject.SetActive(true);
         pageFlips[1].gameObject.SetActive(true);
-        pageFlips[0].GetComponent<Animator>().Play("notebook");
-        pageFlips[1].GetComponent<Animator>().Play("notebook");
+        pageFlips[0].GetComponent<Animator>().Play("notebook", 0, 0.0f);
+        pageFlips[1].GetComponent<Animator>().Play("notebook", 0, 0.0f);
         StartCoroutine(waitForPageFlip());
 		
 		
