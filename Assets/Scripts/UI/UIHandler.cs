@@ -47,6 +47,7 @@ public class UIHandler : MonoBehaviour
     void Start()
     {
         fadeScreen.material.SetFloat("_Fade", 0.0f);
+		renderMessagesOnPhones();
     }
 
     // Update is called once per frame
@@ -84,7 +85,7 @@ public class UIHandler : MonoBehaviour
 		
 	}
 	
-	private void renderMessagesOnPhone()
+	private void renderMessagesOnPhones()
 	{
 		Debug.Log(Phone);
 		Debug.Log(JessiePhone);
@@ -106,7 +107,7 @@ public class UIHandler : MonoBehaviour
         StartCoroutine(waitForPageFlip());
 		
 		
-		renderMessagesOnPhone();
+		renderMessagesOnPhones();
 		
     }
 
