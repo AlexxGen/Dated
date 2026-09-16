@@ -27,16 +27,20 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
 
     private int returnTweenId = -1;
 
+    [SerializeField] private GameManager gameManager;
+
     private void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
         canvas = GetComponentInParent<Canvas>();
         rectTransform = GetComponent<RectTransform>();
         postIt = GameObject.FindWithTag("Post-It").GetComponentInParent<UnityEngine.UI.Image>();
+        gameManager = GameObject.FindAnyObjectByType<GameManager>();
     }
     
     public void OnBeginDrag(PointerEventData eventData)
     {
+        gameObject.GetComponent<AudioSource>().PlayOneShot(gameManager.audioClips[2]);
         if (returnTweenId != -1)
         {
             LeanTween.cancel(gameObject);
@@ -200,10 +204,12 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        gameObject.GetComponent<AudioSource>().PlayOneShot(gameManager.audioClips[3]);
         if (postIt.GetComponent<Animator>())
         {
             postIt.GetComponentInChildren<TextMeshProUGUI>().text = "";
             postIt.GetComponent<Animator>().Play("flip", 0, 0.0f);
+            postIt.GetComponent<AudioSource>().PlayOneShot(gameManager.audioClips[1]);
         }
 
         canvasGroup.blocksRaycasts = true;

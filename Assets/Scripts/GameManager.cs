@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float socialStat = 100;
     [SerializeField] private float lerpDuration = 0.583f;
 
+    public AudioClip[] audioClips;
+
     public int curWeek;
 
     //Take the type and count how many of a certain type are still in the new blocks to determine what changes are needed for the stats

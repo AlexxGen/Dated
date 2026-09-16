@@ -46,7 +46,7 @@ public class UIHandler : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        fadeScreen.material.SetFloat("_Fade", 0.0f);
     }
 
     // Update is called once per frame
@@ -58,18 +58,6 @@ public class UIHandler : MonoBehaviour
     public void SwapCharacters()
     {
         StartCoroutine(fadeAnim());
-        if (curCharacter == 0)
-        {
-            planners[0].gameObject.SetActive(false);
-            planners[1].gameObject.SetActive(true);
-            curCharacter = 1;
-        }
-        else
-        {
-            planners[1].gameObject.SetActive(false);
-            planners[0].gameObject.SetActive(true);
-            curCharacter = 0;
-        }
     }
 	
 	private List<Message> messagesToRenderOnPhone(Character character)
@@ -126,6 +114,7 @@ public class UIHandler : MonoBehaviour
     IEnumerator waitForPageFlip()
     {
         gameManager.StatCheck();
+        gameObject.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(0.583f);
 
         pageFlips[0].gameObject.SetActive(false);
@@ -161,6 +150,18 @@ public class UIHandler : MonoBehaviour
         }
         fadeScreen.material.SetFloat("_Fade", 1.0f);
 
+        if (curCharacter == 0)
+        {
+            planners[0].gameObject.SetActive(false);
+            planners[1].gameObject.SetActive(true);
+            curCharacter = 1;
+        }
+        else
+        {
+            planners[1].gameObject.SetActive(false);
+            planners[0].gameObject.SetActive(true);
+            curCharacter = 0;
+        }
         timeElapsed = 0.0f;
 
         while (timeElapsed < 1)
