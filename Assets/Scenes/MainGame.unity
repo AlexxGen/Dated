@@ -387,7 +387,8 @@ MonoBehaviour:
   planners:
   - {fileID: 1621923843}
   - {fileID: 1059388686}
-  phone: {fileID: 0}
+  JessiePhone: {fileID: 594545814}
+  PeterPhone: {fileID: 1753176299}
   fadeScreen: {fileID: 632595620}
 --- !u!114 &343116849 stripped
 MonoBehaviour:
@@ -789,6 +790,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7150200326762029837, guid: 4f28825135f52184b8b67a7771b1eb7f, type: 3}
   m_PrefabInstance: {fileID: 594545812}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &594545814 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7020244759604952506, guid: 4f28825135f52184b8b67a7771b1eb7f, type: 3}
+  m_PrefabInstance: {fileID: 594545812}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220cd20fb5ada9f4c87ec3bc18e76287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneRenderingScript
 --- !u!114 &595218854 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6734155185913541207, guid: 4f28825135f52184b8b67a7771b1eb7f, type: 3}
@@ -1757,6 +1769,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028c02fe0193e6f4b874f0b99fc7d100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DayColumn
+--- !u!114 &1753176299 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4359425728493672910, guid: 68d31e3f79fbbfe4b9537d811cfcf0a2, type: 3}
+  m_PrefabInstance: {fileID: 6174512861126818515}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220cd20fb5ada9f4c87ec3bc18e76287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneRenderingScript
 --- !u!1 &1866063443
 GameObject:
   m_ObjectHideFlags: 0

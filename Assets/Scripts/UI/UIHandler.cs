@@ -25,8 +25,23 @@ public class UIHandler : MonoBehaviour
 	}
     [SerializeField] private GameObject[] planners;
 	
-	[SerializeField] private PhoneRenderingScript phone;
-	    [SerializeField] private Image fadeScreen;
+	[SerializeField] private PhoneRenderingScript JessiePhone;
+	[SerializeField] private PhoneRenderingScript PeterPhone;
+	
+	private PhoneRenderingScript Phone {get
+		{
+			switch (getCurrentCharacter()) {
+				case Character.JESSIE:
+					return JessiePhone;
+				case Character.PETER:
+					return PeterPhone;
+			}
+			throw new ArgumentException("No valid char");
+		}
+	}
+	
+	
+	[SerializeField] private Image fadeScreen;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -81,7 +96,7 @@ public class UIHandler : MonoBehaviour
 	
 	private void renderMessagesOnPhone()
 	{
-		phone.RenderNotifications(messagesToRenderOnPhone());
+		Phone.RenderNotifications(messagesToRenderOnPhone());
 	}
 	
     public void NextWeek()
