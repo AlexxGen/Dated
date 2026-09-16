@@ -51,8 +51,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220cd20fb5ada9f4c87ec3bc18e76287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhoneRenderingScript
-  topNotification:
-  - {fileID: 0}
+  notificationSlots:
+  - {fileID: 7889269992524635229}
+  - {fileID: 414434242233798820}
+  - {fileID: 2955296198071105090}
 --- !u!1001 &478753263209802603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -155,6 +157,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1566014488719412895, guid: 959c7594349767c4fae3f65d7cd360fb, type: 3}
   m_PrefabInstance: {fileID: 478753263209802603}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7889269992524635229 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7771118164879456054, guid: 959c7594349767c4fae3f65d7cd360fb, type: 3}
+  m_PrefabInstance: {fileID: 478753263209802603}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d2bc1f43090314abe54f288525945e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
 --- !u!1001 &4817687183058960756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -252,6 +265,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 959c7594349767c4fae3f65d7cd360fb, type: 3}
+--- !u!114 &2955296198071105090 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7771118164879456054, guid: 959c7594349767c4fae3f65d7cd360fb, type: 3}
+  m_PrefabInstance: {fileID: 4817687183058960756}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d2bc1f43090314abe54f288525945e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
 --- !u!224 &6296108242541137899 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1566014488719412895, guid: 959c7594349767c4fae3f65d7cd360fb, type: 3}
@@ -354,6 +378,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 959c7594349767c4fae3f65d7cd360fb, type: 3}
+--- !u!114 &414434242233798820 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7771118164879456054, guid: 959c7594349767c4fae3f65d7cd360fb, type: 3}
+  m_PrefabInstance: {fileID: 7933323236134299538}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d2bc1f43090314abe54f288525945e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
 --- !u!224 &8909046478847043853 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1566014488719412895, guid: 959c7594349767c4fae3f65d7cd360fb, type: 3}

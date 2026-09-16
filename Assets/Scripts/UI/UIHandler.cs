@@ -105,9 +105,8 @@ public class UIHandler : MonoBehaviour
         pageFlips[1].GetComponent<Animator>().Play("notebook");
         StartCoroutine(waitForPageFlip());
 		
+		
 		renderMessagesOnPhone();
-		
-		
 		
     }
 
@@ -125,6 +124,8 @@ public class UIHandler : MonoBehaviour
             swapCharBtn.gameObject.SetActive(false);
             nextWeekBtn.gameObject.SetActive(false);
         }
+		
+		
     }
 
     IEnumerator fadeAnim()
