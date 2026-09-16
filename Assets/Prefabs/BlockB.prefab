@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Date Night
+  m_text: Think About Jessie
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6100532452fe45745b97daa83bf1bd0f, type: 2}
   m_sharedMaterial: {fileID: -6431958294504623230, guid: 6100532452fe45745b97daa83bf1bd0f, type: 2}
@@ -177,7 +177,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -757, y: 241.6947}
-  m_SizeDelta: {x: 115, y: 240}
+  m_SizeDelta: {x: 115, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &663941263730172753
 CanvasRenderer:
