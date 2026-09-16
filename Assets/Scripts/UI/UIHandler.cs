@@ -72,15 +72,15 @@ public class UIHandler : MonoBehaviour
         }
     }
 	
-	private List<Message> messagesToRenderOnPhone()
+	private List<Message> messagesToRenderOnPhone(Character character)
 	{
 		List<Message> toReturn = new List<Message>();
 		
 		foreach (EventCategory category in Enum.GetValues(typeof(EventCategory))) {
 			Message messageToRender = GlobalData.GetMessage(
-				getCurrentCharacter(),
+				character,
 				category,
-				gameManager.MoodOfCategory(category, getCurrentCharacter()),
+				gameManager.MoodOfCategory(category, character),
 				gameManager.curWeek
 			);
 			
@@ -102,7 +102,8 @@ public class UIHandler : MonoBehaviour
 		Debug.Log(JessiePhone);
 		Debug.Log(PeterPhone);
 		
-		Phone.RenderNotifications(messagesToRenderOnPhone());
+		JessiePhone.RenderNotifications(messagesToRenderOnPhone(Character.JESSIE));
+		PeterPhone.RenderNotifications(messagesToRenderOnPhone(Character.PETER));
 	}
 	
     public void NextWeek()
