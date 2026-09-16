@@ -86,10 +86,11 @@ public class UIHandler : MonoBehaviour
 	
     public void NextWeek()
     {
+
         pageFlips[0].gameObject.SetActive(true);
         pageFlips[1].gameObject.SetActive(true);
         pageFlips[0].GetComponent<Animator>().Play("notebook");
-        pageFlips[0].GetComponent<Animator>().Play("notebook");
+        pageFlips[1].GetComponent<Animator>().Play("notebook");
         StartCoroutine(waitForPageFlip());
 		
 		renderMessagesOnPhone();
@@ -105,6 +106,12 @@ public class UIHandler : MonoBehaviour
 
         pageFlips[0].gameObject.SetActive(false);
         pageFlips[1].gameObject.SetActive(false);
+
+        if (gameManager.curWeek == 4)
+        {
+            swapCharBtn.gameObject.SetActive(false);
+            nextWeekBtn.gameObject.SetActive(false);
+        }
     }
 
     IEnumerator fadeAnim()

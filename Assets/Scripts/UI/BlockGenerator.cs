@@ -60,8 +60,10 @@ public class BlockGenerator : MonoBehaviour
             float blockHeight = timeBlock.LengthInMinutes();
             blockRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, blockHeight);
             blockPrefab.GetComponent<Image>().sprite = blockTypes[timeBlock.Category];
-            if (blockPrefab.GetComponentInChildren<TextMeshProUGUI>())
+            if (blockPrefab.GetComponentInChildren<TextMeshProUGUI>()){
                 blockPrefab.GetComponentInChildren<TextMeshProUGUI>().text = timeBlock.Name;
+                blockPrefab.GetComponentInChildren<TextMeshProUGUI>().fontSize = Mathf.Clamp(11 * (blockHeight/60), 11, 15);
+            }
 
             if (!curColumn.CanFitBlock(blockHeight))
             {

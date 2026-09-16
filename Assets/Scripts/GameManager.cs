@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,7 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float academicStatJ = 100;
     [SerializeField] private float socialStat = 100;
     [SerializeField] private float extracurricularStatJ = 100;
-    [SerializeField] private float lerpDuration = 3;
+    [SerializeField] private float lerpDuration = 0.583f;
 
     public int curWeek;
 
@@ -224,8 +225,8 @@ public class GameManager : MonoBehaviour
             shaders[1].material.SetFloat("_amountOfStars", curAcademicStatP / 100);
 
             //Change _amountOfStars to be whatever the reference value of the medals in the shadergraph is
-            //shaders[2].material.SetFloat("_amountOfStars", curExtraStatJ / 100);
-            //shaders[3].material.SetFloat("_amountOfStars", curExtraStatP / 100);
+            shaders[2].material.SetFloat("_amountExtracuricular", curExtraStatJ / 100);
+            shaders[3].material.SetFloat("_amountExtracuricular", curExtraStatP / 100);
 
             timeElapsed += Time.deltaTime;
 
@@ -240,8 +241,8 @@ public class GameManager : MonoBehaviour
         shaders[1].material.SetFloat("_amountOfStars", Mathf.Clamp(newAcademicStatP / 100, 0.0f, 100.0f));
 
         //Change _amountOfStars to be whatever the reference value of the medals in the shadergraph is
-        //shaders[2].material.SetFloat("_amountOfStars", Mathf.Clamp(newExtraStatJ / 100, 0.0f, 100.0f));
-        //shaders[3].material.SetFloat("_amountOfStars", Mathf.Clamp(newExtraStatP, 0.0f, 100.0f));
+        shaders[2].material.SetFloat("_amountExtracuricular", Mathf.Clamp(newExtraStatJ / 100, 0.0f, 100.0f));
+        shaders[3].material.SetFloat("_amountExtracuricular", Mathf.Clamp(newExtraStatP / 100, 0.0f, 100.0f));
 
         socialStat = Mathf.Clamp(newSocialStat, 0.0f, 100.0f);
         academicStatJ = Mathf.Clamp(newAcademicStatJ, 0.0f, 100.0f);
@@ -259,8 +260,8 @@ public class GameManager : MonoBehaviour
         shaders[1].material.SetFloat("_amountOfStars", 1);
 
         //Change _amountOfStars to be whatever the reference value of the medals in the shadergraph is
-        //shaders[2].material.SetFloat("_amountOfStars", 1);
-        //shaders[3].material.SetFloat("_amountOfStars", 1);
+        shaders[2].material.SetFloat("_amountExtracuricular", 1);
+        shaders[3].material.SetFloat("_amountExtracuricular", 1);
     }
 
 }

@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Special Night Out with Jessie
+  m_text: Date Night
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 645cf2e35ea0ebb4a825154a704a7d72, type: 2}
   m_sharedMaterial: {fileID: 6105604016105987746, guid: 645cf2e35ea0ebb4a825154a704a7d72, type: 2}
@@ -92,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11
-  m_fontSizeBase: 11
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -176,7 +176,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -757, y: 241.6947}
-  m_SizeDelta: {x: 115, y: 300}
+  m_SizeDelta: {x: 115, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &663941263730172753
 CanvasRenderer:
@@ -243,6 +243,7 @@ MonoBehaviour:
   placeholderPrefab: {fileID: 8774982572740335558, guid: 01d5c06f0e2f37c4e8dee9ce207cb00b, type: 3}
   returnTweenTime: 0.25
   returnEaseType: 6
+  postIt: {fileID: 0}
 --- !u!114 &5871500038310577039
 MonoBehaviour:
   m_ObjectHideFlags: 0

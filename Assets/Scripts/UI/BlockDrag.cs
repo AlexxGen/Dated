@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using TMPro;
 
 public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
@@ -22,6 +23,7 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
     private RectTransform rectTransform;
 
     private DayColumn lastHoveredColumn;
+    [SerializeField] private UnityEngine.UI.Image postIt;
 
     private int returnTweenId = -1;
 
@@ -30,6 +32,7 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
         canvasGroup = GetComponent<CanvasGroup>();
         canvas = GetComponentInParent<Canvas>();
         rectTransform = GetComponent<RectTransform>();
+        postIt = GameObject.FindWithTag("Post-It").GetComponentInParent<UnityEngine.UI.Image>();
     }
     
     public void OnBeginDrag(PointerEventData eventData)
@@ -43,6 +46,8 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
         LeanTween.cancel(gameObject);
 
         CleanupPlaceholder();
+
+        postIt.GetComponentInChildren<TextMeshProUGUI>().text = GetComponent<BlockData>().Dialogue;
 
         previousParent = transform.parent;
         previousSiblingIndex = transform.GetSiblingIndex();
@@ -195,6 +200,12 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (postIt.GetComponent<Animator>())
+        {
+            postIt.GetComponentInChildren<TextMeshProUGUI>().text = "";
+            postIt.GetComponent<Animator>().Play("flip", 0, 0.0f);
+        }
+
         canvasGroup.blocksRaycasts = true;
 
         if (currentPlaceholder != null)

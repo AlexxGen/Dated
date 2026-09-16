@@ -134,6 +134,8 @@ GameObject:
   m_Component:
   - component: {fileID: 26533785}
   - component: {fileID: 26533786}
+  - component: {fileID: 26533788}
+  - component: {fileID: 26533787}
   m_Layer: 5
   m_Name: button
   m_TagString: Untagged
@@ -148,17 +150,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26533784}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.2461532, w: 0.96923095}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 585902469}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 28.5}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -645, y: -349}
-  m_SizeDelta: {x: 466.2986, y: 353.1485}
+  m_AnchoredPosition: {x: -650, y: -367}
+  m_SizeDelta: {x: 308.0306, y: 358.2744}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26533786
 MonoBehaviour:
@@ -200,10 +202,48 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 26533787}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &26533787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26533784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &26533788
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26533784}
+  m_CullTransparentMesh: 1
 --- !u!114 &61630169 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6569019344445400328, guid: 4f28825135f52184b8b67a7771b1eb7f, type: 3}
@@ -347,6 +387,8 @@ MonoBehaviour:
   planners:
   - {fileID: 1621923843}
   - {fileID: 1059388686}
+  phone: {fileID: 0}
+  fadeScreen: {fileID: 632595620}
 --- !u!114 &343116849 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4382748126032494932, guid: 4f28825135f52184b8b67a7771b1eb7f, type: 3}
@@ -604,14 +646,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 2040013652184716919, guid: b3530d09da6d6d64bb46d88dc4277556, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -725,6 +767,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8585076337924751471, guid: 4f28825135f52184b8b67a7771b1eb7f, type: 3}
+      propertyPath: m_Name
+      value: Post-It(Jessie)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585076337924751471, guid: 4f28825135f52184b8b67a7771b1eb7f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115823927063855259, guid: 4f28825135f52184b8b67a7771b1eb7f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -774,7 +828,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &632595619
 RectTransform:
   m_ObjectHideFlags: 0
@@ -837,6 +891,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4479318716866414457, guid: 68d31e3f79fbbfe4b9537d811cfcf0a2, type: 3}
   m_PrefabInstance: {fileID: 6174512861126818515}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &718752570 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6819753865218361965, guid: 68d31e3f79fbbfe4b9537d811cfcf0a2, type: 3}
+  m_PrefabInstance: {fileID: 6174512861126818515}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &755419020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,6 +1082,8 @@ MonoBehaviour:
   shaders:
   - {fileID: 820187116}
   - {fileID: 1421111312}
+  - {fileID: 2028457938}
+  - {fileID: 718752570}
 --- !u!4 &873465983
 Transform:
   m_ObjectHideFlags: 0
@@ -1221,7 +1288,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 38734147969105329, guid: 0b2949f7f1e2e0548ae2d28562abae29, type: 3}
+  m_Sprite: {fileID: 4266241469805928778, guid: 2d74e15bf4262434b8834c7a69afe7ad, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1524,7 +1591,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d8b42048a35996d47bef7eb9bcea4fd6, type: 3}
+  m_Sprite: {fileID: 6840143862761937952, guid: 4a10fae8816702d4bbe7a67fbb2436a9, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1772,6 +1839,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028c02fe0193e6f4b874f0b99fc7d100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DayColumn
+--- !u!114 &2028457938 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 267827779614846489, guid: 4f28825135f52184b8b67a7771b1eb7f, type: 3}
+  m_PrefabInstance: {fileID: 594545812}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1001 &6174512861126818515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1791,6 +1869,18 @@ PrefabInstance:
     - target: {fileID: 1417731138769855610, guid: 68d31e3f79fbbfe4b9537d811cfcf0a2, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563331469493232879, guid: 68d31e3f79fbbfe4b9537d811cfcf0a2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042023777975231515, guid: 68d31e3f79fbbfe4b9537d811cfcf0a2, type: 3}
+      propertyPath: m_Name
+      value: Post-It(Peter)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042023777975231515, guid: 68d31e3f79fbbfe4b9537d811cfcf0a2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4479318716866414457, guid: 68d31e3f79fbbfe4b9537d811cfcf0a2, type: 3}
       propertyPath: m_Pivot.x
