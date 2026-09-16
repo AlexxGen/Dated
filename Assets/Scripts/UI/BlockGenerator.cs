@@ -35,7 +35,7 @@ public class BlockGenerator : MonoBehaviour
 
         foreach (CalendarEvent timeBlock in GlobalData.events)
         {
-            Debug.Log("Current Week: " +  gameManager.curWeek);
+            // Debug.Log("Current Week: " +  gameManager.curWeek);
             if(timeBlock.Week != gameManager.curWeek)
             {
                 continue;

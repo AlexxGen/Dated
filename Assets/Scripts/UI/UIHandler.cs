@@ -96,12 +96,18 @@ public class UIHandler : MonoBehaviour
 	
 	private void renderMessagesOnPhone()
 	{
+		Debug.Log(Phone);
+		Debug.Log(JessiePhone);
+		Debug.Log(PeterPhone);
+		
 		Phone.RenderNotifications(messagesToRenderOnPhone());
 	}
 	
     public void NextWeek()
     {
-
+		
+		Debug.Log("Next Week function running");
+		
         pageFlips[0].gameObject.SetActive(true);
         pageFlips[1].gameObject.SetActive(true);
         pageFlips[0].GetComponent<Animator>().Play("notebook");
