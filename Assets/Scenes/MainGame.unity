@@ -553,11 +553,11 @@ RectTransform:
   - {fileID: 1866063444}
   - {fileID: 1676177742}
   - {fileID: 1240081815}
-  - {fileID: 403924773}
   - {fileID: 105907609}
   - {fileID: 293003226}
   - {fileID: 124966996}
   - {fileID: 2085465302}
+  - {fileID: 403924773}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
