@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Special Night Out with Jessie
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 645cf2e35ea0ebb4a825154a704a7d72, type: 2}
-  m_sharedMaterial: {fileID: 6105604016105987746, guid: 645cf2e35ea0ebb4a825154a704a7d72, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6100532452fe45745b97daa83bf1bd0f, type: 2}
+  m_sharedMaterial: {fileID: -6431958294504623230, guid: 6100532452fe45745b97daa83bf1bd0f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
