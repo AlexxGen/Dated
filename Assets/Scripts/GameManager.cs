@@ -196,10 +196,14 @@ public class GameManager : MonoBehaviour
         polaroids[2].GetComponent<Image>().sprite = highestTwoP[0].sprite;
         polaroids[3].GetComponent<Image>().sprite = highestTwoP[1].sprite;
 
-        polaroids[0].SetActive(true);
-        polaroids[1].SetActive(true);
-        polaroids[2].SetActive(true);
-        polaroids[3].SetActive(true);
+        if (highestTwoJ[0].value >= 51)
+            polaroids[0].SetActive(true);
+        if (highestTwoJ[1].value >= 51)
+            polaroids[1].SetActive(true);
+        if (highestTwoP[0].value >= 51)
+            polaroids[2].SetActive(true);
+        if (highestTwoP[1].value >= 51)
+            polaroids[3].SetActive(true);
 
         polaroids[0].GetComponent<Animator>().Play("ThrowJ", 0, 0.0f);
         polaroids[1].GetComponent<Animator>().Play("ThrowJ", 0, 0.0f);

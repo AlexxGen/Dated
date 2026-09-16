@@ -104,6 +104,7 @@ public class UIHandler : MonoBehaviour
         pageFlips[1].gameObject.SetActive(true);
         pageFlips[0].GetComponent<Animator>().Play("notebook", 0, 0.0f);
         pageFlips[1].GetComponent<Animator>().Play("notebook", 0, 0.0f);
+        gameManager.StatCheck();
         StartCoroutine(waitForPageFlip());
 		
 		
@@ -113,7 +114,6 @@ public class UIHandler : MonoBehaviour
 
     IEnumerator waitForPageFlip()
     {
-        gameManager.StatCheck();
         gameObject.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(0.583f);
 
@@ -133,19 +133,16 @@ public class UIHandler : MonoBehaviour
     {
 
         float timeElapsed = 0.0f;
+        float startValue = 0.0f;
 
-        float oldValue = 0.0f;
-
-        while (timeElapsed < 1.0f)
+        while (timeElapsed < 1.5f)
         {
-            float t = timeElapsed / 1.0f;
+            float t = timeElapsed / 1.5f;
 
-            float curValue = Mathf.Lerp(oldValue, 1.0f, t);
+            float curValue = Mathf.Clamp(Mathf.Lerp(startValue, 1.0f, t), 0.0f, 1.0f);
             Debug.Log("Cur Value: " + curValue);
 
             fadeScreen.material.SetFloat("_Fade", curValue);
-
-            oldValue = curValue;
 
             timeElapsed += Time.deltaTime;
             yield return null;
@@ -166,15 +163,15 @@ public class UIHandler : MonoBehaviour
         }
         timeElapsed = 0.0f;
 
-        while (timeElapsed < 1)
-        {
-            float t = timeElapsed / 1;
+        startValue = 1.0f;
 
-            float curValue = Mathf.Lerp(oldValue, 0.0f, t);
+        while (timeElapsed < 3.0f)
+        {
+            float t = timeElapsed / 3.0f;
+
+            float curValue = Mathf.Clamp(Mathf.Lerp(startValue, 0.0f, t), 0.0f, 1.0f);
 
             fadeScreen.material.SetFloat("_Fade", curValue);
-
-            oldValue = curValue;
 
             timeElapsed += Time.deltaTime;
             yield return null;
