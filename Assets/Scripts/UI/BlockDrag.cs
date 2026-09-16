@@ -29,6 +29,9 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
 
     [SerializeField] private GameManager gameManager;
 
+    private float scaleUp = 2f;
+    private float scaleTime = 0.2f;
+
     private void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
@@ -82,6 +85,8 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
                 initialColumn.AnimateLayout(gameObject.transform);
             }
         }
+
+        LeanTween.scale(rectTransform, Vector3.one * scaleUp, scaleTime);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -204,6 +209,8 @@ public class BlockDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        LeanTween.scale(rectTransform, Vector3.one, scaleTime);
+
         gameObject.GetComponent<AudioSource>().PlayOneShot(gameManager.audioClips[3]);
         if (postIt.GetComponent<Animator>())
         {
