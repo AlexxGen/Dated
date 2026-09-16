@@ -53,8 +53,11 @@ public class NotificationRenderingScript : MonoBehaviour
 	public void ShowMessage(Message message)
 	{
 		MessageImage.sprite = CorrectBackgroundImage(message);
+		
 		HeaderText.text = message.Sender;
 		BodyText.text = message.Text;
+		
+		Debug.Log("Updated " + message.Sender + ": " + message.Text);
 	}
 	
 }

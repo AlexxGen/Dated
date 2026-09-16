@@ -39,7 +39,7 @@ public class PhoneRenderingScript : MonoBehaviour
 			}
 		});
 		
-		for (int i = 0; i < toShow.Count && i < notificationSlots.Length; ++i)
+		for (int i = 0; i < toShow.Count; ++i)
 		{
 			notificationSlots[i].ShowMessage(toShow[i]);
 		}
