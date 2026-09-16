@@ -104,6 +104,7 @@ public class UIHandler : MonoBehaviour
         pageFlips[1].gameObject.SetActive(true);
         pageFlips[0].GetComponent<Animator>().Play("notebook", 0, 0.0f);
         pageFlips[1].GetComponent<Animator>().Play("notebook", 0, 0.0f);
+        gameManager.StatCheck();
         StartCoroutine(waitForPageFlip());
 		
 		
@@ -113,7 +114,6 @@ public class UIHandler : MonoBehaviour
 
     IEnumerator waitForPageFlip()
     {
-        gameManager.StatCheck();
         gameObject.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(0.583f);
 
