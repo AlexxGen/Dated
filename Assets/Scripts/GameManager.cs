@@ -167,34 +167,34 @@ public class GameManager : MonoBehaviour
 
     public void Endings()
     {
-        //var statPairsJ = new (float value, Sprite sprite)[]
-        //{
-        //    (extracurricularStatJ, endings[0]),
-        //    (academicStatJ, endings[1]),
-        //    (socialStat, endings[4])
-        //};
-        //var statPairsP = new (float value, Sprite sprite)[]
-        //{
-        //    (extracurricularStatP, endings[2]),
-        //    (academicStatP, endings[3]),
-        //    (socialStat, endings[4])
-        //};
+        var statPairsJ = new (float value, Sprite sprite)[]
+        {
+            (extracurricularStatJ, endings[0]),
+            (academicStatJ, endings[1]),
+            (socialStat, endings[4])
+        };
+        var statPairsP = new (float value, Sprite sprite)[]
+        {
+            (extracurricularStatP, endings[2]),
+            (academicStatP, endings[3]),
+            (socialStat, endings[4])
+        };
 
 
-        //var highestTwoJ = statPairsJ
-        //    .OrderByDescending(pair => pair.value)
-        //    .Take(2)
-        //    .ToArray();
+        var highestTwoJ = statPairsJ
+            .OrderByDescending(pair => pair.value)
+            .Take(2)
+            .ToArray();
 
-        //var highestTwoP = statPairsP
-        //    .OrderByDescending(pair => pair.value)
-        //    .Take(2)
-        //    .ToArray();
+        var highestTwoP = statPairsP
+            .OrderByDescending(pair => pair.value)
+            .Take(2)
+            .ToArray();
 
-        //polaroids[0].GetComponent<Image>().sprite = highestTwoJ[0].sprite;
-        //polaroids[1].GetComponent<Image>().sprite = highestTwoJ[1].sprite;
-        //polaroids[2].GetComponent<Image>().sprite = highestTwoP[0].sprite;
-        //polaroids[3].GetComponent<Image>().sprite = highestTwoP[1].sprite;
+        polaroids[0].GetComponent<Image>().sprite = highestTwoJ[0].sprite;
+        polaroids[1].GetComponent<Image>().sprite = highestTwoJ[1].sprite;
+        polaroids[2].GetComponent<Image>().sprite = highestTwoP[0].sprite;
+        polaroids[3].GetComponent<Image>().sprite = highestTwoP[1].sprite;
 
         polaroids[0].SetActive(true);
         polaroids[1].SetActive(true);
