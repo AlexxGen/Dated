@@ -130,6 +130,8 @@ public class UIHandler : MonoBehaviour
             fadeScreen.material.SetFloat("_Fade", curValue);
 
             oldValue = curValue;
+
+            timeElapsed += Time.deltaTime;
         }
 
         timeElapsed = 0.0f;
@@ -143,6 +145,8 @@ public class UIHandler : MonoBehaviour
             fadeScreen.material.SetFloat("_Fade", curValue);
 
             oldValue = curValue;
+
+            timeElapsed += Time.deltaTime;
         }
 
         yield return null;
